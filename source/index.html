@@ -48,12 +48,18 @@
         иначе!
       </h2>
       <div class="intro__button">
-        <button class="button intro__button--download">Скачать приложение</button>
+        <a class="button intro__button--download" href="#">Скачать приложение</a>
       </div>
       <div class="intro__platforms">
-        <img class="intro__platform ios" src="https://via.placeholder.com/150x150" width="47" height="56" alt="PINK">
-        <img class="intro__platform android" src="https://via.placeholder.com/150x150" width="43" height="47" alt="PINK">
-        <img class="intro__platform windows" src="https://via.placeholder.com/150x150" width="44" height="41" alt="PINK">
+        <a href="#">
+          <img class="intro__platform ios" src="https://via.placeholder.com/150x150" width="47" height="56" alt="PINK">
+        </a>
+        <a href="#">
+          <img class="intro__platform android" src="https://via.placeholder.com/150x150" width="43" height="47" alt="PINK">
+        </a>
+        <a href="#">
+          <img class="intro__platform windows" src="https://via.placeholder.com/150x150" width="44" height="41" alt="PINK">
+        </a>
       </div>
       <div class="intro__description">
         <p class="intro__description--s">
@@ -66,44 +72,44 @@
   <section class="information">
     <div class="information__wrapper">
       <h2 class="visually-hidden">Информация</h2>
-      <div class="information__title">
+      <p class="information__container">
       <span class="information__title--text">
         Устали от серости <br> мегаполиса?
       </span>
         <span class="information__title--text">
         Нам есть, что вам <br> предложить!
       </span>
-      </div>
-      <div class="information-box">
-        <div class="information-box__text">
-          <span class="information-box__title">Поднимает настроение</span>
-          <p class="information-box__desc">
+      </p>
+      <ul class="information__list">
+        <li class="information__item">
+          <span class="information__title">Поднимает настроение</span>
+          <p class="information__text">
             Приложение позволит вам победить <br>
             осеннюю хандру и депрессию <br>
             буквально в несколько кликов!
           </p>
-        </div>
-        <div class="information-box__text">
-          <span class="information-box__title">Меняет мир вокруг</span>
-          <p class="information-box__desc">
+          <img class="information__img" src="https://via.placeholder.com/150x150" width="157" height="320" alt="PINK phone">
+        </li>
+        <li class="information__item">
+          <span class="information__title">Меняет мир вокруг</span>
+          <p class="information__text">
             Сделайте снимок и украсьте его <br>
             смайликом или текстовой подписью, <br>
             чтобы усилить эффект
           </p>
-        </div>
-        <div class="information-box__text">
-          <span class="information-box__title">Заводит новых друзей</span>
-          <p class="information-box__desc">
+          <img class="information__img visually-hidden" src="https://via.placeholder.com/150x150" width="157" height="320" alt="PINK phone">
+        </li>
+        <li class="information__item">
+          <span class="information__title">Заводит новых друзей</span>
+          <p class="information__text">
             Ставьте лайки, комментируйте, <br>
             делитесь фотографиями с друзьями и <br>
             заводите новых
           </p>
-        </div>
-        <img class="information__img" src="https://via.placeholder.com/150x150" width="157" height="320" alt="PINK phone">
-        <img class="information__img visually-hidden" src="https://via.placeholder.com/150x150" width="157" height="320" alt="PINK phone">
-        <img class="information__img visually-hidden" src="https://via.placeholder.com/150x150" width="157" height="320" alt="PINK phone">
-      </div>
-      <div class="information_diagram visually-hidden">
+          <img class="information__img visually-hidden" src="https://via.placeholder.com/150x150" width="157" height="320" alt="PINK phone">
+        </li>
+      </ul>
+      <div class="diagram visually-hidden">
         <span class="diagram__title">Эффект на 24 часа!</span>
         <p class="diagram__text">
           Британские ученые провели исследования <br>
@@ -210,25 +216,25 @@
         Остались вопросы? <br>
         Свяжитесь с нами!
       </h2>
-      <div class="contact">
-        <div class="contact__call">
+      <ul class="contact">
+        <li class="contact__call">
           <span class="contact__call-title">Звоните:</span>
           <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </div>
-        <div class="contact__email">
+        </li>
+        <li class="contact__email">
           <span class="contact__email-title">Пишите:</span>
           <a class="contacts__email-address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="contact__address">
+        </li>
+        <li class="contact__address">
           <span class="contact__address-title">Приезжайте в гости:</span>
           <span class="contacts__map-address">ул. Большая Конюшенная, 19/8</span>
-        </div>
-        <div class="contact__map">
+        </li>
+        <li class="contact__map">
           <a>
             <img src="https://via.placeholder.com/150x150" width="320" height="200" alt="Мы на карте">
           </a>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   </section>
 </main>
