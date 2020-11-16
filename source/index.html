@@ -15,22 +15,22 @@
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <div class="main-nav__wrapper">
       <ul class="page-header__list">
-        <li class="page-header__item page-header__item--burger">
+        <li class="page-header__item">
           <a>
             Главная
           </a>
         </li>
-        <li class="page-header__item page-header__item--burger">
+        <li class="page-header__item">
           <a href="catalog.html">
             Фотографии
           </a>
         </li>
-        <li class="page-header__item page-header__item--burger">
+        <li class="page-header__item">
           <a href="form.html">
             Конкурс
           </a>
         </li>
-        <li class="page-header__item page-header__item--burger">
+        <li class="page-header__item">
           <a href="https://htmlacademy.ru/profession/frontender">
             HTML Academy
           </a>
@@ -50,19 +50,19 @@
       <div class="intro__button">
         <a class="button intro__button--download" href="#">Скачать приложение</a>
       </div>
-      <div class="intro__platforms">
-        <a href="#">
-          <img class="intro__platform ios" src="https://via.placeholder.com/150x150" width="47" height="56" alt="PINK">
+      <div class="platforms">
+        <a href="https://www.apple.com/ru/app-store/">
+          <img class="platforms__item" src="https://via.placeholder.com/150x150" width="47" height="56" alt="PINK">
         </a>
-        <a href="#">
-          <img class="intro__platform android" src="https://via.placeholder.com/150x150" width="43" height="47" alt="PINK">
+        <a href="https://play.google.com/store?hl=ru">
+          <img class="platforms__item" src="https://via.placeholder.com/150x150" width="43" height="47" alt="PINK">
         </a>
-        <a href="#">
-          <img class="intro__platform windows" src="https://via.placeholder.com/150x150" width="44" height="41" alt="PINK">
+        <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
+          <img class="platforms__item" src="https://via.placeholder.com/150x150" width="44" height="41" alt="PINK">
         </a>
       </div>
       <div class="intro__description">
-        <p class="intro__description--s">
+        <p class="intro__text">
           Доступно для iPhone, iPad, Android, <br>
           Windows Phone, OS X, Windows 8
         </p>
@@ -73,16 +73,16 @@
     <div class="information__wrapper">
       <h2 class="visually-hidden">Информация</h2>
       <p class="information__container">
-      <span class="information__title--text">
+      <span class="information__container--text">
         Устали от серости <br> мегаполиса?
       </span>
-        <span class="information__title--text">
+        <span class="information__container--text">
         Нам есть, что вам <br> предложить!
       </span>
       </p>
       <ul class="information__list">
         <li class="information__item">
-          <span class="information__title">Поднимает настроение</span>
+          <h2 class="information__title">Поднимает настроение</h2>
           <p class="information__text">
             Приложение позволит вам победить <br>
             осеннюю хандру и депрессию <br>
@@ -91,7 +91,7 @@
           <img class="information__img" src="https://via.placeholder.com/150x150" width="157" height="320" alt="PINK phone">
         </li>
         <li class="information__item">
-          <span class="information__title">Меняет мир вокруг</span>
+          <h2 class="information__title">Меняет мир вокруг</h2>
           <p class="information__text">
             Сделайте снимок и украсьте его <br>
             смайликом или текстовой подписью, <br>
@@ -100,7 +100,7 @@
           <img class="information__img visually-hidden" src="https://via.placeholder.com/150x150" width="157" height="320" alt="PINK phone">
         </li>
         <li class="information__item">
-          <span class="information__title">Заводит новых друзей</span>
+          <h2 class="information__title">Заводит новых друзей</h2>
           <p class="information__text">
             Ставьте лайки, комментируйте, <br>
             делитесь фотографиями с друзьями и <br>
@@ -121,7 +121,7 @@
       </div>
     </div>
   </section>
-  <section class="main-reviews">
+  <section class="main-reviews reviews">
     <div class="reviews__wrapper slider">
       <h2 class="visually-hidden">Отзывы</h2>
       <div class="reviews__list slider__list">
@@ -129,7 +129,7 @@
           <div class="reviews__author-info">
             <cite class="reviews__author-name">Николай Петров</cite>
             <span class="reviews__author-work">25 лет, водитель трамвая</span>
-            <p class="reviews__text">
+            <p class="reviews__author-text">
               «Это приложение перевернуло мой мир <br>
               и позволило по-новому взглянуть на <br>
               привычные серые вещи! А еще я <br>
@@ -174,15 +174,15 @@
       </div>
     </div>
   </section>
-  <section class="prise prise__slider">
-    <div class="prise__slider-table">
+  <section class="prise">
+    <div class="prise__slider">
       <h2 class="visually-hidden">Цена</h2>
       <table class="prise__table">
-        <tr class="table__cell">
+        <tr class="prise__header">
           <th>&nbsp;</th>
-          <th class="prise__cell">БАЗА<span class="prise__caption">1,99 USD</span></th>
-          <th class="prise__cell prise__cell--hit">СТАНДАРТ<span class="cell__caption">3,99 USD</span></th>
-          <th class="prise__cell">АНЛИМ<span class="cell__caption">9,99 USD</span></th>
+          <th class="prise__header-cell">БАЗА<span class="prise__caption">1,99 USD</span></th>
+          <th class="prise__header-cell prise__header-cell--hit">СТАНДАРТ<span class="cell__caption">3,99 USD</span></th>
+          <th class="prise__header-cell">АНЛИМ<span class="cell__caption">9,99 USD</span></th>
         </tr>
         <tr class="prise__line">
           <td class="prise__information">Розовый фильтр</td>
@@ -210,24 +210,24 @@
       </div>
     </div>
   </section>
-  <section class="contacts">
-    <div class="contacts__wrapper">
-      <h2 class="contacts__title">
+  <section class="contact">
+    <div class="contact__wrapper">
+      <h2 class="contact__title">
         Остались вопросы? <br>
         Свяжитесь с нами!
       </h2>
-      <ul class="contact">
+      <ul class="contact__list">
         <li class="contact__call">
           <span class="contact__call-title">Звоните:</span>
-          <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          <a class="contact__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </li>
         <li class="contact__email">
           <span class="contact__email-title">Пишите:</span>
-          <a class="contacts__email-address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a class="contact__email-address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
         <li class="contact__address">
           <span class="contact__address-title">Приезжайте в гости:</span>
-          <span class="contacts__map-address">ул. Большая Конюшенная, 19/8</span>
+          <span class="contact__map-address">ул. Большая Конюшенная, 19/8</span>
         </li>
         <li class="contact__map">
           <a>
@@ -245,7 +245,7 @@
         <img src="https://via.placeholder.com/150x150" width="145" height="40" alt="PINK">
       </a>
     </div>
-    <div class="page-footer__social">
+    <div class="social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
