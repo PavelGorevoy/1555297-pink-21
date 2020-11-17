@@ -51,14 +51,14 @@
         <a class="button intro__button--download" href="#">Скачать приложение</a>
       </div>
       <div class="platforms">
-        <a href="https://www.apple.com/ru/app-store/">
-          <img class="platforms__item" src="https://via.placeholder.com/150x150" width="47" height="56" alt="PINK">
+        <a class="platforms__item" href="https://www.apple.com/ru/app-store/">
+          <img src="https://via.placeholder.com/150x150" width="47" height="56" alt="PINK">
         </a>
-        <a href="https://play.google.com/store?hl=ru">
-          <img class="platforms__item" src="https://via.placeholder.com/150x150" width="43" height="47" alt="PINK">
+        <a class="platforms__item" href="https://play.google.com/store?hl=ru">
+          <img src="https://via.placeholder.com/150x150" width="43" height="47" alt="PINK">
         </a>
-        <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
-          <img class="platforms__item" src="https://via.placeholder.com/150x150" width="44" height="41" alt="PINK">
+        <a class="platforms__item" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
+          <img src="https://via.placeholder.com/150x150" width="44" height="41" alt="PINK">
         </a>
       </div>
       <div class="intro__description">
@@ -124,46 +124,54 @@
   <section class="main-reviews reviews">
     <div class="reviews__wrapper slider">
       <h2 class="visually-hidden">Отзывы</h2>
-      <div class="reviews__list slider__list">
-        <blockquote class="reviews__item slider__item">
-          <div class="reviews__author-info">
-            <cite class="reviews__author-name">Николай Петров</cite>
-            <span class="reviews__author-work">25 лет, водитель трамвая</span>
-            <p class="reviews__author-text">
-              «Это приложение перевернуло мой мир <br>
-              и позволило по-новому взглянуть на <br>
-              привычные серые вещи! А еще я <br>
-              познакомился со своей будущей женой <br>
-              в комментариях к выложенной фотографии!»
-            </p>
-          </div>
-        </blockquote>
-        <blockquote class="reviews__item slider__item">
-          <div class="reviews__author-info">
-            <cite class="reviews__author-name">Николай Петров</cite>
-            <span class="reviews__author-work">25 лет, водитель трамвая</span>
-            <p class="reviews__text">
-              «Это приложение перевернуло мой мир <br>
-              и позволило по-новому взглянуть на <br>
-              привычные серые вещи! А еще я <br>
-              познакомился со своей будущей женой <br>
-              в комментариях к выложенной фотографии!»
-            </p>
-          </div>
-        </blockquote>
-        <blockquote class="reviews__item slider__item">
-          <div class="reviews__author-info">
-            <cite class="reviews__author-name">Николай Петров</cite>
-            <span class="reviews__author-work">25 лет, водитель трамвая</span>
-            <p class="reviews__text">
-              «Это приложение перевернуло мой мир <br>
-              и позволило по-новому взглянуть на <br>
-              привычные серые вещи! А еще я <br>
-              познакомился со своей будущей женой <br>
-              в комментариях к выложенной фотографии!»
-            </p>
-          </div>
-        </blockquote>
+      <ul class="reviews__list slider__list">
+        <li class="slider__item">
+          <blockquote class="reviews__item">
+            <div class="reviews__author-info">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <span class="reviews__author-work">25 лет, водитель трамвая</span>
+              <p class="reviews__author-text">
+                «Это приложение перевернуло мой мир <br>
+                и позволило по-новому взглянуть на <br>
+                привычные серые вещи! А еще я <br>
+                познакомился со своей будущей женой <br>
+                в комментариях к выложенной фотографии!»
+              </p>
+            </div>
+          </blockquote>
+        </li>
+        <li class="slider__item">
+          <blockquote class="reviews__item">
+            <div class="reviews__author-info">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <span class="reviews__author-work">25 лет, водитель трамвая</span>
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир <br>
+                и позволило по-новому взглянуть на <br>
+                привычные серые вещи! А еще я <br>
+                познакомился со своей будущей женой <br>
+                в комментариях к выложенной фотографии!»
+              </p>
+            </div>
+          </blockquote>
+        </li>
+        <li class="slider__item">
+          <blockquote class="reviews__item">
+            <div class="reviews__author-info">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <span class="reviews__author-work">25 лет, водитель трамвая</span>
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир <br>
+                и позволило по-новому взглянуть на <br>
+                привычные серые вещи! А еще я <br>
+                познакомился со своей будущей женой <br>
+                в комментариях к выложенной фотографии!»
+              </p>
+            </div>
+          </blockquote>
+        </li>
+      </ul>
+      <div class="reviews__buttons">
         <button class="reviews__prev" type="button">Предыдущий отзыв</button>
         <button class="reviews__next" type="button">Следующий отзыв</button>
       </div>
@@ -181,7 +189,8 @@
         <tr class="prise__header">
           <th>&nbsp;</th>
           <th class="prise__header-cell">БАЗА<span class="prise__caption">1,99 USD</span></th>
-          <th class="prise__header-cell prise__header-cell--hit">СТАНДАРТ<span class="cell__caption">3,99 USD</span></th>
+          <th class="prise__header-cell prise__header-cell--hit">СТАНДАРТ<span class="cell__caption">3,99 USD</span>
+          </th>
           <th class="prise__header-cell">АНЛИМ<span class="cell__caption">9,99 USD</span></th>
         </tr>
         <tr class="prise__line">
