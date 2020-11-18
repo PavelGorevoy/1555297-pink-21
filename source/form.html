@@ -54,16 +54,24 @@
       шанс выиграть ценный приз — 1000
       миль на вашу бонусную карту!
     </p>
-      <fieldset class="name">
-        <label for="second-name" class="name__title"> ФАМИЛИЯ:</label>
-        <input class="name__second" type="text" name="second-name" id="second-name" placeholder="Укажите фамилию *">
-        <label for="first-name" class="name__title"> ИМЯ:</label>
-        <input class="name__first" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *">
-        <label for="last-name" class="name__title"> ОТЧЕСТВО:</label>
-        <input class="name__last" type="text" name="last-name" id="last-name" placeholder="Ну и отчество тоже">
-      </fieldset>
-    <fieldset class="checkbox">
-      <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+    <fieldset class="form-write form-name">
+      <ul class="form-name__list">
+        <li class="form-name__item">
+          <label for="second-name" class="form-name__title"> Фамилия:</label>
+          <input class="input__text" type="text" name="second-name" id="second-name" placeholder="Укажите фамилию *">
+        </li>
+        <li class="form-name__item">
+          <label for="first-name" class="form-name__title"> Имя:</label>
+          <input class="input__text" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *">
+        </li>
+        <li class="form-name__item">
+          <label for="last-name" class="form-name__title"> Оотчество:</label>
+          <input class="input__text" type="text" name="last-name" id="last-name" placeholder="Ну и отчество тоже">
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="form-selectable checkbox">
+      <legend class="checkbox__title">Ваши безбашенные достижения в путешествии</legend>
       <ul class="checkbox__list">
         <li class="checkbox__item">
           <input class="checkbox__input" type="checkbox" name="shark" id="self-with-shark" checked>
@@ -91,14 +99,14 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset class="number">
-      <label for="number" class="number__title">НОМЕР ТЕЛЕФОНА</label>
-      <input class="number__phone" type="text" name="number" id="number" placeholder="Номер, пожалуйста">
-      <label for="email" class="number__title"> ИМЯ:</label>
-      <input class="number__email" type="text" name="email" id="email" placeholder="Введите почту *">
+    <fieldset class="form-write form-number">
+      <label for="number" class="form-number__title">Номер телефона</label>
+      <input class="input__text" type="text" name="number" id="number" placeholder="Номер, пожалуйста">
+      <label for="email" class="form-number__title">Адрес почты</label>
+      <input class="input__text" type="text" name="email" id="email" placeholder="Введите почту *">
     </fieldset>
-    <fieldset class="platforms">
-      <legend class="form__title">С каким приложением путешествовали?</legend>
+    <fieldset class="form-selectable platforms">
+      <legend class="platforms__title">С каким приложением путешествовали?</legend>
       <ul class="radio">
         <li class="radio__item">
           <input class="radio__input" type="radio" name="platforms" id="ios" checked>
@@ -115,15 +123,15 @@
       </ul>
     </fieldset>
     <fieldset class="write">
-      <label class="write__title" for="note">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
+      <label class="write__title" for="note">Опишите свои эмоции</label>
       <textarea class="write__area" id="note" name="note" rows="9" placeholder="Можно прям в красках, не
 стесняясь в выражениях"></textarea>
     </fieldset>
     <button class="button form__button--submit" type="submit" name="submit-form">Отправить форму</button>
     <p class="required">
-    <small>
-      * — обязательные поля
-    </small>
+      <small>
+        * — обязательные поля
+      </small>
     </p>
   </form>
 </main>
