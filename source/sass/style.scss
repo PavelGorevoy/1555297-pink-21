@@ -1,7 +1,12 @@
 // Начните писать стили здесь
+
+// global
+@import "global/normalize";
 @import "global/global";
 @import "global/variables";
 @import "global/fonts";
+
+// blocks
 @import "blocks/page";
 @import "blocks/main-nav";
 @import "blocks/page-header";
