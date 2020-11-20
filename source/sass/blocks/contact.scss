@@ -1,0 +1,28 @@
+.contact__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  color: $dark-blue;
+}
+
+.contact__list {
+  list-style: none;
+}
+
+.contact__list-title {
+  font-style: normal;
+  color: $dark-blue;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.contact__item {
+  color: $contact-color;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+}
