@@ -6,10 +6,14 @@
 @import "global/fonts";
 
 // blocks
+
+// global blocks
 @import "blocks/page";
+@import "blocks/intro";
+
+// index page
 @import "blocks/main-nav";
 @import "blocks/page-header";
-@import "blocks/intro";
 @import "blocks/information";
 @import "blocks/reviews";
 @import "blocks/prise";
