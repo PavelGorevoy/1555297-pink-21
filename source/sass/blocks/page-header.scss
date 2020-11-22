@@ -5,3 +5,17 @@
 .page-header__list {
   list-style: none;
 }
+
+.page-header__item {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  color: $basic-white;
+  text-transform: uppercase;
+}
+
+.page-header__item a {
+  text-decoration: none;
+  color: $basic-white;
+}
