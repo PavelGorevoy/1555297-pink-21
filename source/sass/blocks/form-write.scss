@@ -3,9 +3,8 @@
 }
 
 .form-write__label {
+  @include fonts-stile;
   color: $red-color;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -17,9 +16,8 @@
   min-height: 59px;
 
   &::placeholder {
+    @include fonts-stile;
     color: $dark-blue;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 30px;
   }

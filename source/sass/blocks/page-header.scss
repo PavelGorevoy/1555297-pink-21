@@ -7,7 +7,7 @@
 }
 
 .page-header__item {
-  font-style: normal;
+  @include fonts-stile;
   font-weight: bold;
   font-size: 18px;
   line-height: 32px;
@@ -15,6 +15,6 @@
 }
 
 .page-header__item a {
-  @include links;
+  @include fonts-stile;
   color: $basic-white;
 }

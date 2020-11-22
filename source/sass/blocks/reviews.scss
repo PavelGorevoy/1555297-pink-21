@@ -1,6 +1,6 @@
 .reviews__author-name {
+  @include fonts-stile;
   color: $basic-black;
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -15,15 +15,13 @@
 }
 
 .reviews__author-work {
-  font-style: normal;
-  font-weight: normal;
+  @include fonts-stile;
   font-size: 14px;
   line-height: 30px;
 }
 
 .reviews__author-text {
-  font-style: normal;
-  font-weight: normal;
+  @include fonts-stile;
   font-size: 14px;
   line-height: 30px;
 }

@@ -16,12 +16,12 @@
 }
 
 .information__text {
-  font-weight: normal;
+  @include fonts-stile;
   font-size: 14px;
   line-height: 24px;
 }
 
 .information__list {
-  background-color: $gray;
   @include stile-list;
+  background-color: $gray;
 }
