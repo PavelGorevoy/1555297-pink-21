@@ -1,5 +1,5 @@
 .contact__title {
-  font-style: normal;
+  @include fonts-stile;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
@@ -7,11 +7,11 @@
 }
 
 .contact__list {
-  list-style: none;
+  @include stile-list;
 }
 
 .contact__list-title {
-  font-style: normal;
+  @include fonts-stile;
   color: $dark-blue;
   font-weight: bold;
   font-size: 18px;
@@ -19,9 +19,8 @@
 }
 
 .contact__item {
-  color: $contact-color;
-  text-decoration: none;
-  font-style: normal;
+  @include fonts-stile;
+  color: $red-color;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;

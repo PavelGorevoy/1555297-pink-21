@@ -3,11 +3,11 @@
 }
 
 .page-header__list {
-  list-style: none;
+  @include stile-list;
 }
 
 .page-header__item {
-  font-style: normal;
+  @include fonts-stile;
   font-weight: bold;
   font-size: 18px;
   line-height: 32px;
@@ -16,6 +16,6 @@
 }
 
 .page-header__item a {
-  text-decoration: none;
+  @include fonts-stile;
   color: $basic-white;
 }

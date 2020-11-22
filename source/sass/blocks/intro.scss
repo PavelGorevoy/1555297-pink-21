@@ -1,5 +1,5 @@
 .intro__wrapper {
-  font-style: normal;
+  @include fonts-stile;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
