@@ -1,0 +1,27 @@
+.post__review {
+  background-color: $gray;
+}
+
+.post__author {
+  @include fonts-stile;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.post__date {
+  @include fonts-stile;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.post__quote {
+  @include fonts-stile;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.post__like-quantity {
+  color: $red-color;
+}

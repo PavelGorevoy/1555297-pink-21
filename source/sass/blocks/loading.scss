@@ -1,9 +1,9 @@
-.required {
+.loading__text {
   @include fonts-stile;
   font-size: 14px;
   line-height: 30px;
 }
 
-.required__marker {
-  color: $red-color;
+.loading-form__list {
+  @include stile-list;
 }
