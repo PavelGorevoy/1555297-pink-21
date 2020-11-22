@@ -3,5 +3,18 @@
 }
 
 .page-header__list {
-  list-style: none;
+  @include stile-list;
+}
+
+.page-header__item {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.page-header__item a {
+  @include links;
+  color: $basic-white;
 }

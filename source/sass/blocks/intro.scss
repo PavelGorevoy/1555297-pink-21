@@ -10,3 +10,15 @@
 .intro__title {
   line-height: 120%;
 }
+
+.intro__form {
+  background-color: $background-intro;
+}
+
+.intro__text {
+  color: $basic-white;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+}

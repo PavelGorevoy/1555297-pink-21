@@ -23,5 +23,5 @@
 
 .information__list {
   background-color: $gray;
-  list-style: none;
+  @include stile-list;
 }

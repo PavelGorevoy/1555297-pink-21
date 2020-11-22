@@ -7,7 +7,7 @@
 }
 
 .contact__list {
-  list-style: none;
+  @include stile-list;
 }
 
 .contact__list-title {
@@ -19,8 +19,8 @@
 }
 
 .contact__item {
-  color: $contact-color;
-  text-decoration: none;
+  @include links;
+  color: $red-color;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
