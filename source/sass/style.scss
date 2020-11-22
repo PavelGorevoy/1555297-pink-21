@@ -7,9 +7,13 @@
 @import "global/mixins";
 
 // blocks
+
+// global blocks
 @import "blocks/page";
-@import "blocks/page-header";
 @import "blocks/intro";
+
+// index page
+@import "blocks/page-header";
 @import "blocks/information";
 @import "blocks/reviews";
 @import "blocks/prise";
@@ -17,6 +21,8 @@
 @import "blocks/social";
 @import "blocks/page-footer";
 @import "blocks/slider";
+
+//form page
 @import "blocks/form";
 @import "blocks/form-write";
 @import "blocks/form-selectable";
