@@ -3,6 +3,7 @@
 }
 
 .information__container {
+  font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
@@ -16,7 +17,7 @@
 }
 
 .information__text {
-  font-weight: normal;
+  @include fonts-stile;
   font-size: 14px;
   line-height: 24px;
 }
