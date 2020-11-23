@@ -23,5 +23,9 @@
 }
 
 .post__like-quantity {
+  @include fonts-stile;
   color: $red-color;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
 }
