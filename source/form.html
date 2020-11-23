@@ -67,7 +67,7 @@
           <input class="form-write__input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *">
         </li>
         <li class="form-write__item">
-          <label for="last-name" class="form-write__label"> Оотчество:</label>
+          <label for="last-name" class="form-write__label"> Отчество:</label>
           <input class="form-write__input" type="text" name="last-name" id="last-name" placeholder="Ну и отчество тоже">
         </li>
       </ul>
@@ -125,8 +125,10 @@
       </ul>
     </fieldset>
     <fieldset class="write">
-      <label class="write__title" for="note">Опишите свои эмоции</label>
-      <textarea class="write__area" id="note" name="note" rows="9" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      <legend class="write__title">Опишите свои эмоции</legend>
+      <label>
+      <textarea class="write__area" id="note" name="note" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </label>
     </fieldset>
     <button class="button form__button form__button--submit" type="submit" name="submit-form">Отправить форму</button>
     <p class="required">
