@@ -1,24 +1,24 @@
 .intro__wrapper {
-  @include fonts-stile;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
-  color: $basic-white;
   background-color: $background-intro;
 }
 
 .intro__title {
+  color: $basic-white;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
   line-height: 120%;
+}
+
+.intro__text {
+  color: $basic-white;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .intro__form {
   background-color: $background-intro;
 }
 
-.intro__text {
-  @include fonts-stile;
-  color: $basic-white;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 33px;
-}
