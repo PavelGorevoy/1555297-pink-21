@@ -1,0 +1,16 @@
+.form-selectable {
+  background-color: $gray;
+}
+
+.form-selectable__title {
+  @include fonts-stile;
+  color: $red-color;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.form-selectable__label {
+  @include fonts-stile;
+  font-size: 18px;
+  line-height: 30px;
+}

@@ -1,0 +1,17 @@
+.catalog__intro {
+  background-color: $background-intro;
+}
+
+.catalog__text {
+  @include fonts-stile;
+  color: $basic-white;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.catalog__description {
+  @include fonts-stile;
+  font-size: 14px;
+  line-height: 30px;
+}

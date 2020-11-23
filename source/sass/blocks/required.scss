@@ -1,0 +1,9 @@
+.required {
+  @include fonts-stile;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.required__marker {
+  color: $red-color;
+}

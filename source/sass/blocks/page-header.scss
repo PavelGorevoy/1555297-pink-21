@@ -8,10 +8,10 @@
 
 .page-header__item {
   @include fonts-stile;
+  color: $basic-white;
   font-weight: bold;
   font-size: 18px;
   line-height: 32px;
-  color: $basic-white;
   text-transform: uppercase;
 }
 

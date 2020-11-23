@@ -1,0 +1,9 @@
+.loading__text {
+  @include fonts-stile;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.loading-form__list {
+  @include stile-list;
+}

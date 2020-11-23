@@ -16,4 +16,13 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+
+  &--form {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+
+.intro__form {
+  background-color: $background-intro;
 }

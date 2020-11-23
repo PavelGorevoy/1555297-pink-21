@@ -4,13 +4,13 @@
 
 .prise__header-cell {
   @include fonts-stile;
+  color: $basic-white;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
-  border: 2px solid $border-color;
   background-color: $dark-blue;
-  color: $basic-white;
+  border: 2px solid $border-color;
 }
 
 .prise__information {
