@@ -1,0 +1,25 @@
+.contact__title {
+  @include fonts-stile;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.contact__list {
+  @include stile-list;
+}
+
+.contact__list-title {
+  @include fonts-stile;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.contact__item {
+  @include fonts-stile;
+  color: $red-color;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+}

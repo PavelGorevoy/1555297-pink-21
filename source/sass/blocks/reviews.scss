@@ -1,0 +1,27 @@
+.reviews__author-name {
+  @include fonts-stile;
+  color: $basic-black;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.reviews__list {
+  @include stile-list;
+}
+
+.reviews__author-work {
+  @include fonts-stile;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.reviews__author-text {
+  @include fonts-stile;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.reviews__item {
+  margin: 0;
+}

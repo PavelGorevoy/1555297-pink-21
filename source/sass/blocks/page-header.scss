@@ -1,0 +1,21 @@
+.page-header {
+  background-color: $dark-blue;
+}
+
+.page-header__list {
+  @include stile-list;
+}
+
+.page-header__item {
+  @include fonts-stile;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  color: $basic-white;
+  text-transform: uppercase;
+}
+
+.page-header__item a {
+  @include fonts-stile;
+  color: $basic-white;
+}
