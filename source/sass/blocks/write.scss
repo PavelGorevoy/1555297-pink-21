@@ -3,6 +3,8 @@
   color: $red-color;
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .write__area {
@@ -10,10 +12,20 @@
   min-height: 197px;
   border: 2px solid $gray;
   border-radius: 1px;
+  resize: none;
 
   &::placeholder {
     @include fonts-stile;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  &[id="note"] {
+    @include fonts-stile;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 20px;
+    padding-top: 22px;
   }
 }

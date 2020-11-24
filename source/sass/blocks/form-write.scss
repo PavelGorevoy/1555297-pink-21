@@ -20,4 +20,12 @@
     font-size: 18px;
     line-height: 30px;
   }
+
+  &[type="text"] {
+    @include fonts-stile;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 20px;
+  }
 }
