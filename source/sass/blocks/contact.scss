@@ -1,19 +1,60 @@
+.contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .contact__title {
   @include fonts-stile;
+  text-align: center;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
+  min-width: 222px;
 }
 
 .contact__list {
   @include stile-list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 222px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: $tablet-width-max;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    max-width: $desktop-width-max;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contact__sub-title {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact__sub-title {
+    width: calc(100% / 3);
+  }
 }
 
 .contact__list-title {
   @include fonts-stile;
+  display: block;
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
+  text-align: center;
 }
 
 .contact__item {
@@ -22,4 +63,19 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
+}
+
+.contact__map {
+  width: 100%;
+  height: 200px;
+
+  @media (min-width: $tablet-width) {
+    height: 374px;
+    max-width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 502px;
+    max-width: 1200px;
+  }
 }

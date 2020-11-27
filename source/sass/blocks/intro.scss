@@ -1,5 +1,24 @@
+.intro {
+  background: url("../../img/back-desktop.png") no-repeat center; //временно
+}
+
 .intro__wrapper {
-  background-color: $background-intro;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 667px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+    max-width: $tablet-width-max;
+    height: 619px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width-max;
+    height: 743px;
+  }
 }
 
 .intro__title {
@@ -8,6 +27,15 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
+  margin: 0;
+}
+
+.intro__container {
+  background-color: $background-intro;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .intro__text {

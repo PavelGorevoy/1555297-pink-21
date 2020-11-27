@@ -5,12 +5,14 @@
 @import "global/variables";
 @import "global/fonts";
 @import "global/mixins";
+@import "blocks/page-main";
 
 // blocks
 
 // global blocks
 @import "blocks/page";
 @import "blocks/intro";
+@import "blocks/main-nav";
 @import "blocks/page-header";
 @import "blocks/page-footer";
 @import "blocks/slider";
@@ -21,6 +23,8 @@
 @import "blocks/prise";
 @import "blocks/contact";
 @import "blocks/social";
+@import "blocks/platforms";
+@import "blocks/diagram";
 
 //form page
 @import "blocks/form";

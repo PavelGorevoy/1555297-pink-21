@@ -8,6 +8,7 @@
 </head>
 <body class="page__body">
 <header class="page-header">
+  <div class="page-header__wrapper">
   <div class="page-header__logo">
     <a href="#">
       <img src="https://via.placeholder.com/150x150" width="74" height="23" alt="PINK">
@@ -40,6 +41,7 @@
       </ul>
     </div>
   </nav>
+  </div>
 </header>
 <main class="page-main">
   <h1 class="visually-hidden">Приложение PINK</h1>
@@ -49,6 +51,7 @@
         Взгляни на жизнь <br>
         иначе!
       </h2>
+      <div class="intro__container">
       <div class="intro__button">
         <a class="button intro__button--download" href="#">Скачать приложение</a>
       </div>
@@ -69,6 +72,7 @@
           Windows Phone, OS X, Windows 8
         </p>
       </div>
+      </div>
     </div>
   </section>
   <section class="information">
@@ -76,12 +80,14 @@
       <h2 class="visually-hidden">Информация</h2>
       <p class="information__container">
       <span class="information__description">
-        Устали от серости <br> мегаполиса?
+        Устали от серости <br class="information__br"> мегаполиса?
       </span>
         <span class="information__description">
         Нам есть, что вам <br> предложить!
       </span>
       </p>
+      <div class="information__background">
+      <div class="information__box">
       <ul class="information__list">
         <li class="information__item">
           <h2 class="information__title">Поднимает настроение</h2>
@@ -90,7 +96,6 @@
             осеннюю хандру и депрессию <br>
             буквально в несколько кликов!
           </p>
-          <img class="information__img" src="https://via.placeholder.com/150x150" width="157" height="320" alt="PINK phone">
         </li>
         <li class="information__item">
           <h2 class="information__title">Меняет мир вокруг</h2>
@@ -99,7 +104,6 @@
             смайликом или текстовой подписью, <br>
             чтобы усилить эффект
           </p>
-          <img class="information__img visually-hidden" src="https://via.placeholder.com/150x150" width="157" height="320" alt="PINK phone">
         </li>
         <li class="information__item">
           <h2 class="information__title">Заводит новых друзей</h2>
@@ -108,10 +112,17 @@
             делитесь фотографиями с друзьями и <br>
             заводите новых
           </p>
-          <img class="information__img visually-hidden" src="https://via.placeholder.com/150x150" width="157" height="320" alt="PINK phone">
         </li>
       </ul>
-      <div class="diagram visually-hidden">
+      <div class="information__images">
+        <img class="information__img information__img--hide" src="https://via.placeholder.com/150x150" width="157" height="320" alt="PINK phone">
+        <img class="information__img information__img--hide" src="https://via.placeholder.com/150x150" width="157" height="320" alt="PINK phone">
+        <img class="information__img" src="https://via.placeholder.com/150x150" width="157" height="320" alt="PINK phone">
+      </div>
+      </div>
+      </div>
+      <div class="diagram">
+        <div class="diagram__container">
         <span class="diagram__title">Эффект на 24 часа!</span>
         <p class="diagram__text">
           Британские ученые провели исследования <br>
@@ -121,9 +132,10 @@
         </p>
         <a class="diagram__link" href="#">Узнать больше об исследовании</a>
       </div>
+      </div>
     </div>
   </section>
-  <section class="main-reviews reviews">
+  <section class="reviews">
     <div class="reviews__wrapper slider">
       <h2 class="visually-hidden">Отзывы</h2>
       <ul class="reviews__list slider__list">
@@ -133,10 +145,10 @@
               <cite class="reviews__author-name">Николай Петров</cite>
               <span class="reviews__author-work">25 лет, водитель трамвая</span>
               <p class="reviews__author-text">
-                «Это приложение перевернуло мой мир <br>
-                и позволило по-новому взглянуть на <br>
-                привычные серые вещи! А еще я <br>
-                познакомился со своей будущей женой <br>
+                «Это приложение перевернуло мой мир
+                и позволило по-новому взглянуть на
+                привычные серые вещи! А еще я
+                познакомился со своей будущей женой
                 в комментариях к выложенной фотографии!»
               </p>
             </div>
@@ -148,10 +160,10 @@
               <cite class="reviews__author-name">Николай Петров</cite>
               <span class="reviews__author-work">25 лет, водитель трамвая</span>
               <p class="reviews__text">
-                «Это приложение перевернуло мой мир <br>
-                и позволило по-новому взглянуть на <br>
-                привычные серые вещи! А еще я <br>
-                познакомился со своей будущей женой <br>
+                «Это приложение перевернуло мой мир
+                и позволило по-новому взглянуть на
+                привычные серые вещи! А еще я
+                познакомился со своей будущей женой
                 в комментариях к выложенной фотографии!»
               </p>
             </div>
@@ -163,10 +175,10 @@
               <cite class="reviews__author-name">Николай Петров</cite>
               <span class="reviews__author-work">25 лет, водитель трамвая</span>
               <p class="reviews__text">
-                «Это приложение перевернуло мой мир <br>
-                и позволило по-новому взглянуть на <br>
-                привычные серые вещи! А еще я <br>
-                познакомился со своей будущей женой <br>
+                «Это приложение перевернуло мой мир
+                и позволило по-новому взглянуть на
+                привычные серые вещи! А еще я
+                познакомился со своей будущей женой
                 в комментариях к выложенной фотографии!»
               </p>
             </div>
@@ -189,31 +201,31 @@
       <h2 class="visually-hidden">Цена</h2>
       <table class="prise__table">
         <tr class="prise__header">
-          <th>&nbsp;</th>
-          <th class="prise__header-cell">База<span class="prise__caption">1,99 USD</span></th>
-          <th class="prise__header-cell prise__header-cell--hit">Стандарт<span class="cell__caption">3,99 USD</span></th>
-          <th class="prise__header-cell">Анлим<span class="cell__caption">9,99 USD</span></th>
+          <th class="prise--hidden">&nbsp;</th>
+          <th class="prise__header-cell prise--hidden">База<span class="prise__caption">1,99 USD</span></th>
+          <th class="prise__header-cell prise__header-cell--hit">Стандарт<span class="prise__caption">3,99 USD</span></th>
+          <th class="prise__header-cell prise--hidden">Анлим<span class="prise__caption">9,99 USD</span></th>
         </tr>
         <tr class="prise__line">
           <td class="prise__information">Розовый фильтр</td>
+          <td class="prise__marker prise--hidden">yes</td>
           <td class="prise__marker">yes</td>
-          <td class="prise__marker">yes</td>
-          <td class="prise__marker">yes</td>
+          <td class="prise__marker prise--hidden">yes</td>
         </tr>
         <tr class="prise__line">
           <td class="prise__information">Смайлики</td>
-          <td class="prise__marker">no</td>
+          <td class="prise__marker prise--hidden">no</td>
           <td class="prise__marker">yes</td>
-          <td class="prise__marker">yes</td>
+          <td class="prise__marker prise--hidden">yes</td>
         </tr>
         <tr class="prise__line">
           <td class="prise__information">Комментарии</td>
+          <td class="prise__marker prise--hidden">no</td>
           <td class="prise__marker">no</td>
-          <td class="prise__marker">no</td>
-          <td class="prise__marker">yes</td>
+          <td class="prise__marker prise--hidden">yes</td>
         </tr>
       </table>
-      <div class="reviews__toggles slider__toggles">
+      <div class="prise__toggles slider__toggles">
         <button class="slider__toggle" type="button">1</button>
         <button class="slider__toggle slider__toggle--current" type="button">2</button>
         <button class="slider__toggle" type="button">3</button>
@@ -222,29 +234,22 @@
   </section>
   <section class="contact">
     <div class="contact__wrapper">
-      <h2 class="contact__title">
-        Остались вопросы? <br>
-        Свяжитесь с нами!
-      </h2>
+      <h2 class="contact__title">Остались вопросы? <br> Свяжитесь с нами!</h2>
       <ul class="contact__list">
-        <li class="contact__call">
+        <li class="contact__sub-title">
           <span class="contact__list-title">Звоните:</span>
           <a class="contact__item" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </li>
-        <li class="contact__email">
+        <li class="contact__sub-title">
           <span class="contact__list-title">Пишите:</span>
           <a class="contact__item" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
-        <li class="contact__address">
+        <li class="contact__sub-title">
           <span class="contact__list-title">Приезжайте в гости:</span>
-          <span class="contact__item">ул. Большая Конюшенная, 19/8</span>
-        </li>
-        <li class="contact__map">
-          <a>
-            <img src="https://via.placeholder.com/150x150" width="320" height="200" alt="Мы на карте">
-          </a>
+          <span class="contact__item">ул. Большая <br> Конюшенная, 19/8</span>
         </li>
       </ul>
+      <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003226!2d30.320858716252705!3d59.93871916905397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1606495957775!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
   </section>
 </main>

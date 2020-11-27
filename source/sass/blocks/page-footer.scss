@@ -1,5 +1,52 @@
+.page-footer {
+  height: 284px;
+
+  @media (min-width: $tablet-width) {
+    height: 127px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 197px;
+  }
+}
+
 .copyright__text {
   @include fonts-stile;
   font-size: 14px;
   line-height: 18px;
+}
+
+.page-footer__wrapper {
+  display: grid;
+  gap: 41px;
+  margin: 0 auto;
+  padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr min-content 1fr;
+    max-width: $tablet-width-max;
+    gap: normal;
+    padding-top: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width-max;
+    padding-top: 70px;
+  }
+}
+
+.page-footer__logo {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
+.page-footer__copyright {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
 }
