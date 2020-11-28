@@ -9,17 +9,21 @@
     justify-content: space-between;
     align-items: center;
     min-height: 110px;
-    width: $desktop-width-max;
+    width: 940px;
     margin: 0 auto;
   }
 }
 
 .page-header__list {
   @include stile-list;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     max-width: 620px;
   }
 }

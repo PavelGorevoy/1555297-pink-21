@@ -9,8 +9,8 @@
 }
 
 .prise__table {
+  @include container;
   border-spacing: 0;
-  margin: 0 auto;
 }
 
 .prise__header-cell {
@@ -34,6 +34,12 @@
   @media (min-width: $tablet-width) {
     text-transform: none;
   }
+}
+
+.prise__toggles {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {

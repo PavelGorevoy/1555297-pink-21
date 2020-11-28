@@ -1,14 +1,6 @@
 .reviews {
-  margin: 0 auto;
+  @include container;
   min-width: 280px;
-
-  @media (min-width: $tablet-width) {
-    max-width: $tablet-width-max;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width-max;
-  }
 }
 
 .reviews__author-info {
@@ -49,14 +41,6 @@
   font-size: 14px;
   line-height: 30px;
   min-width: 280px;
-
-  @media (min-width: $tablet-width) {
-    max-width: $tablet-width-max;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 688px;
-  }
 }
 
 .reviews__item {
@@ -69,4 +53,10 @@
   @media (min-width: $desktop-width) {
     display: block;
   }
+}
+
+.reviews__toggles {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
 }

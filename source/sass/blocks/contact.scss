@@ -15,6 +15,7 @@
 }
 
 .contact__list {
+  @include container;
   @include stile-list;
   display: flex;
   flex-direction: column;
@@ -27,12 +28,10 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: $tablet-width-max;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    max-width: $desktop-width-max;
   }
 }
 
@@ -67,15 +66,15 @@
 
 .contact__map {
   width: 100%;
-  height: 200px;
+  min-height: 200px;
 
   @media (min-width: $tablet-width) {
-    height: 374px;
+    min-height: 374px;
     max-width: 660px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 502px;
+    min-height: 502px;
     max-width: 1200px;
   }
 }
