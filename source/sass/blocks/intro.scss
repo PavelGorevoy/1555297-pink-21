@@ -1,13 +1,52 @@
+.intro {
+  background: url("../../img/back-desktop.png") no-repeat center; //временно
+}
+
+@media (min-width: $tablet-width) {
+  .intro__box {
+    @include container;
+  }
+}
+
 .intro__wrapper {
-  background-color: $background-intro;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 667px;
+  width: auto;
+  max-width: 619px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+    max-width: 300px;
+    height: 619px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 743px;
+  }
 }
 
 .intro__title {
+  display: block;
+  text-align: center;
   color: $basic-white;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
+}
+
+.intro__container {
+  background-color: $background-intro;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.intro__holder {
+  text-align: center;
 }
 
 .intro__text {
@@ -17,12 +56,22 @@
   font-size: 14px;
   line-height: 24px;
 
-  &--form {
+  &--page {
     font-size: 24px;
     line-height: 33px;
   }
 }
 
-.intro__form {
-  background-color: $background-intro;
+.intro__page {
+  text-align: center;
+  vertical-align: center;
+  min-height: 171px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 330px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 284px;
+  }
 }

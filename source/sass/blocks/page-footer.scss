@@ -1,5 +1,50 @@
+.page-footer {
+  min-height: 284px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 127px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 197px;
+  }
+}
+
 .copyright__text {
   @include fonts-stile;
   font-size: 14px;
   line-height: 18px;
+}
+
+.page-footer__wrapper {
+  @include container;
+  display: grid;
+  gap: 41px;
+  padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr min-content 1fr;
+    gap: normal;
+    padding-top: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+  }
+}
+
+.page-footer__logo {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
+.page-footer__copyright {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
 }

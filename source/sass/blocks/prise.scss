@@ -1,4 +1,15 @@
+.prise {
+  background-color: $gray;
+}
+
+@media (min-width: 220px) and (max-width: $mobile-width-only) {
+  .prise--hidden {
+    display: none;
+  }
+}
+
 .prise__table {
+  @include container;
   border-spacing: 0;
 }
 
@@ -13,6 +24,26 @@
   border: 2px solid $border-color;
 }
 
+.prise__caption {
+  display: block;
+}
+
 .prise__information {
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    text-transform: none;
+  }
+}
+
+.prise__toggles {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .prise__toggles {
+    display: none;
+  }
 }

@@ -1,9 +1,18 @@
 .form-selectable {
-  background-color: $gray;
+  border: 2px solid $border-color;
+  border-radius: 1px;
+}
+
+@media (min-width: 280px) and (max-width: $tablet-width) {
+  .form-selectable {
+    background-color: $gray;
+    border: 0;
+  }
 }
 
 .form-selectable__title {
   @include fonts-stile;
+  text-align: center;
   color: $red-color;
   font-size: 14px;
   line-height: 18px;

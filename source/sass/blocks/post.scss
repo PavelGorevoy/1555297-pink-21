@@ -1,5 +1,64 @@
+.post__list {
+  @include container;
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 54px 20px;
+  }
+}
+
+.post__top-img {
+  min-width: 320px;
+  min-height: 137px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 660px;
+    min-height: 509px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1200px;
+    min-height: 509px;
+  }
+}
+
+.post__img {
+  min-width: 280px;
+  min-height: 180px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 300px;
+    min-height: 300px;
+  }
+}
+
 .post__review {
   background-color: $gray;
+  min-height: 121px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 155px;
+    text-align: left;
+  }
+
+  &--top {
+    @include container;
+    min-height: 192px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 121px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 96px;
+    }
+  }
 }
 
 .post__author {
@@ -20,6 +79,15 @@
   @include fonts-stile;
   font-size: 14px;
   line-height: 24px;
+}
+
+.post__button {
+  display: flex;
+  align-items: baseline;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .post__like-quantity {

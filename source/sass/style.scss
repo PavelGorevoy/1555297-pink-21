@@ -5,12 +5,15 @@
 @import "global/variables";
 @import "global/fonts";
 @import "global/mixins";
+@import "global/button";
 
 // blocks
 
 // global blocks
 @import "blocks/page";
 @import "blocks/intro";
+@import "blocks/main-nav";
+@import "blocks/page-main";
 @import "blocks/page-header";
 @import "blocks/page-footer";
 @import "blocks/slider";
@@ -21,6 +24,8 @@
 @import "blocks/prise";
 @import "blocks/contact";
 @import "blocks/social";
+@import "blocks/platforms";
+@import "blocks/diagram";
 
 //form page
 @import "blocks/form";
@@ -28,6 +33,9 @@
 @import "blocks/form-selectable";
 @import "blocks/write";
 @import "blocks/required";
+@import "blocks/form-checkbox";
+@import "blocks/form-number";
+@import "blocks/form-platforms";
 
 //catalog page
 @import "blocks/catalog";

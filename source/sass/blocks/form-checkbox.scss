@@ -1,0 +1,29 @@
+.form-checkbox {
+  min-height: 604px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 549px;
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 228px;
+  }
+}
+
+.form-checkbox__list {
+  @include stile-list;
+  display: grid;
+  gap: 47px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 47px 58px;
+    max-width: 812px;
+  }
+}

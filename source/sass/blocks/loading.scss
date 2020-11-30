@@ -1,5 +1,14 @@
+.loading {
+  @include container;
+}
+
+.loading-form {
+  background-color: $gray;
+}
+
 .loading__text {
   @include fonts-stile;
+  text-align: center;
   font-size: 14px;
   line-height: 30px;
 }

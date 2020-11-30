@@ -1,0 +1,22 @@
+.form-platforms {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 297px;
+    max-width: 406px;
+  }
+}
+
+.form-platforms__list {
+  @include stile-list;
+  gap: 38px;
+  display: grid;
+
+  @media (min-width: $desktop-width) {
+    gap: 39px;
+    padding-top: 54px;
+    padding-left: 74px;
+  }
+}

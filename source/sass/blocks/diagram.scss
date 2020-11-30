@@ -1,0 +1,48 @@
+@media (min-width: $desktop-width) {
+  .diagram {
+    background-color: $gray;
+  }
+}
+
+@media (min-width: 230px) and (max-width: $tablet-width) {
+  .diagram__container {
+    display: none;
+  }
+}
+
+.diagram__container {
+  @include container;
+}
+
+.diagram__title {
+  @include fonts-stile;
+  font-weight: bold;
+  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 30px;
+  }
+}
+
+.diagram__text {
+  @include fonts-stile;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.diagram__link {
+  color: $red-color;
+}
