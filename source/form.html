@@ -45,12 +45,14 @@
 </header>
 <main class="page-main">
   <h1 class="visually-hidden">Приложение PINK</h1>
-  <div class="intro__form">
-    <p class="intro__text intro__text--form">
-      Конкурс на самое
-      безбашенное
-      путешествие с Пинк
-    </p>
+  <div class="intro">
+    <div class="intro__page">
+      <p class="intro__text intro__text--page">
+        Конкурс на самое <br>
+        безбашенное <br>
+        путешествие с Пинк
+      </p>
+    </div>
   </div>
   <form class="form" action="https://echo.htmlacademy.ru" method="post">
     <p class="form__text">
@@ -103,11 +105,18 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset class="form-write form-write--number">
-      <label for="number" class="form-write__label">Номер телефона</label>
-      <input class="form-write__input" type="text" name="number" id="number" placeholder="Номер, пожалуйста">
-      <label for="email" class="form-write__label">Адрес почты</label>
-      <input class="form-write__input" type="text" name="email" id="email" placeholder="Введите почту *">
+    <fieldset class="form-write form-number">
+      <legend class="form-number__title">Контактная информация</legend>
+      <ul class="form-number__list">
+        <li class="form-number__item">
+          <label for="number" class="form-write__label form-write__label--number">Номер телефона</label>
+          <input class="form-write__input" type="text" name="number" id="number" placeholder="Номер, пожалуйста">
+        </li>
+        <li class="form-number__item">
+          <label for="email" class="form-write__label form-write__label--number">Адрес почты</label>
+          <input class="form-write__input" type="text" name="email" id="email" placeholder="Введите почту *">
+        </li>
+      </ul>
     </fieldset>
     <fieldset class="form-selectable form-platforms">
       <legend class="form-selectable__title">С каким приложением путешествовали?</legend>
@@ -129,15 +138,17 @@
     <fieldset class="write">
       <legend class="write__title">Опишите свои эмоции</legend>
       <label>
-      <textarea class="write__area" id="note" name="note" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <textarea class="write__area" id="note" name="note" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </label>
     </fieldset>
-    <button class="button form__button form__button--submit" type="submit" name="submit-form">Отправить форму</button>
-    <p class="required">
-      <small>
-        <span class="required__marker">*</span> — обязательные поля
-      </small>
-    </p>
+    <div class="form__submit">
+      <button class="button form__button form__button--submit" type="submit" name="submit-form">Отправить форму</button>
+      <p class="required">
+        <small>
+          <span class="required__marker">*</span> — обязательные поля
+        </small>
+      </p>
+    </div>
   </form>
 </main>
 <footer class="page-footer">

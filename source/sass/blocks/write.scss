@@ -1,3 +1,23 @@
+.write {
+  order: 2;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 616px;
+    min-height: 289px;
+    border: 2px solid $border-color;
+    border-radius: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 936px;
+    min-height: 213px;
+  }
+}
+
 .write__title {
   @include fonts-stile;
   color: $red-color;
@@ -8,9 +28,9 @@
 }
 
 .write__area {
-  min-width: 276px;
-  min-height: 197px;
-  border: 2px solid $gray;
+  width: calc(276px - 20px);
+  height: calc(197px - 22px);
+  border: 2px solid $border-color;
   border-radius: 1px;
   resize: none;
 
@@ -27,5 +47,19 @@
     line-height: 30px;
     padding-left: 20px;
     padding-top: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: auto;
+    margin-top: 28px;
+    width: calc(496px - 20px);
+    height: calc(189px - 22px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 39px;
+    width: calc(810px - 20px);
+    height: calc(118px - 22px);
   }
 }
