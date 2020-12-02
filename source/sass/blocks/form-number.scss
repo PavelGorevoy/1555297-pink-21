@@ -2,6 +2,10 @@
   border: 2px solid $border-color;
   border-radius: 1px;
   order: 2;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 @media (min-width: 280px) and (max-width: $tablet-width) {

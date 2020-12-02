@@ -1,6 +1,10 @@
 .form-write {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
 
 .form-write--name {
