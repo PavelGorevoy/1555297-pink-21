@@ -1,0 +1,68 @@
+.modal {
+  @include container;
+}
+
+.modal__box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 1425px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 320px;
+  min-height: 289px;
+  background-color: $basic-white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    top: 1164px;
+    width: 460px;
+    min-height: 363px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 817px;
+    width: 780px;
+    min-height: 377px;
+  }
+}
+
+.modal__send {
+  top: 1899px;
+  min-height: 380px;
+
+  @media (min-width: $tablet-width) {
+    top: 1638px;
+    min-height: 432px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 1275px;
+  }
+}
+
+.modal__button {
+  height: 163px;
+  background-color: $gray;
+  border-radius: 0 0 5px 5px;
+
+  @media (min-width: $tablet-width) {
+    height: 163px;
+  }
+}
+
+.modal__error-button {
+  background-color: $basic-white;
+
+  @media (min-width: $desktop-width) {
+    background-color: $gray;
+  }
+}
+
+.modal__off {
+  display: none;
+}
