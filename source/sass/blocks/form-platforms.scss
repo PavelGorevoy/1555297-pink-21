@@ -1,10 +1,11 @@
 .form-platforms {
+  order: 2;
+
   @media (min-width: $tablet-width) {
     order: 1;
   }
 
   @media (min-width: $desktop-width) {
-    height: 297px;
     max-width: 406px;
     width: 50%;
   }
@@ -12,8 +13,12 @@
 
 .form-platforms__list {
   @include stile-list;
-  gap: 38px;
   display: grid;
+  gap: 38px;
+
+  @media (max-width: $mobile-width-only) {
+    @include container;
+  }
 
   @media (min-width: $desktop-width) {
     gap: 39px;

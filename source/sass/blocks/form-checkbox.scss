@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 549px;
-    order: 2;
+    order: 3;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,6 +16,10 @@
   @include stile-list;
   display: grid;
   gap: 47px;
+
+  @media (max-width: $mobile-width-only) {
+    @include container;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 54px;

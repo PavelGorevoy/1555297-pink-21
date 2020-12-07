@@ -5,11 +5,16 @@
   padding: 0;
   max-width: 280px;
 
+  @media (max-width: $mobile-width-only) {
+    @include container;
+  }
+
   @media (min-width: $tablet-width) {
     min-width: 616px;
     min-height: 289px;
     border: 2px solid $border-color;
     border-radius: 1px;
+    order: 3;
   }
 
   @media (min-width: $desktop-width) {
