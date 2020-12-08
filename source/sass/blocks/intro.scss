@@ -35,6 +35,17 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
+  margin: 0;
+  padding-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .intro__container {
@@ -49,16 +60,49 @@
   text-align: center;
 }
 
+.intro__description {
+  padding-top: 28px;
+  padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 58px;
+  }
+}
+
 .intro__text {
   color: $basic-white;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 
   &--page {
     font-size: 24px;
     line-height: 33px;
+  }
+}
+
+.intro__button {
+  padding-top: 28px;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 39px;
+    padding-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 51px;
+    padding-bottom: 67px;
   }
 }
 

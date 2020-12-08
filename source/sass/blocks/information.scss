@@ -10,16 +10,40 @@
 
 .information__container {
   @include container;
+  @include fonts-stile;
   text-align: center;
-  font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
   min-width: 280px;
+  min-height: 216px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 40px;
+    line-height: 54px;
+    min-width: 588px;
+    min-height: 238px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    min-width: 780px;
+    min-height: 317px;
+  }
 }
 
 .information__description {
   display: block;
+
+  &:last-child {
+    @media (max-width: $tablet-width) {
+      padding-top: 45px;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -35,7 +59,7 @@
 .information__box {
   @include container;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
@@ -50,18 +74,25 @@
 }
 
 .information__title {
+  @include fonts-stile;
   text-align: center;
-  color: $basic-black;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
+  color: $basic-black;
+  margin: 0;
+  padding: 45px 0 25px 0;
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    padding: 46px 0 24px 0;
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 59px 0 35px 0;
   }
 }
 
@@ -78,6 +109,8 @@
 
   @media (min-width: $desktop-width) {
     text-align: center;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 

@@ -16,7 +16,13 @@
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
     order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
   }
 }
 
@@ -32,6 +38,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    font-size: 18px;
     order: 1;
   }
 }
@@ -40,7 +47,17 @@
   @include fonts-stile;
   font-size: 14px;
   line-height: 30px;
-  min-width: 280px;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 688px;
+  }
 }
 
 .reviews__item {

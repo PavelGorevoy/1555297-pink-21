@@ -12,6 +12,11 @@
 
 .diagram__container {
   @include container;
+  min-height: 330px;
+
+  @media (min-width: $desktop-width) {
+    min-height: 429px;
+  }
 }
 
 .diagram__title {
@@ -26,6 +31,10 @@
 
   @media (min-width: $desktop-width) {
     line-height: 30px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -44,5 +53,14 @@
 }
 
 .diagram__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
   color: $red-color;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

@@ -1,5 +1,17 @@
 .prise {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: $gray;
+  min-height: 506px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 534px;
+  }
 }
 
 @media (min-width: 220px) and (max-width: $mobile-width-only) {
@@ -22,6 +34,27 @@
   text-transform: uppercase;
   background-color: $dark-blue;
   border: 2px solid $border-color;
+
+  @media (max-width: 659px) {
+    width: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.prise__line {
+  background-color: $basic-white;
+  height: 59px;
+
+  @media (min-width: $tablet-width) {
+    height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 59px;
+  }
 }
 
 .prise__caption {
@@ -29,10 +62,17 @@
 }
 
 .prise__information {
+  @include fonts-stile;
   text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
 
   @media (min-width: $tablet-width) {
     text-transform: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
   }
 }
 
@@ -40,6 +80,7 @@
   width: 280px;
   margin: 0 auto;
   text-align: center;
+  padding-top: 45px;
 }
 
 @media (min-width: $tablet-width) {
