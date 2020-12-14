@@ -3,6 +3,20 @@
   min-width: 280px;
 }
 
+.reviews__wrapper {
+  padding-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 109px;
+    padding-bottom: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 72px;
+    padding-bottom: 41px;
+  }
+}
+
 .reviews__author-info {
   display: flex;
   flex-direction: column;
@@ -14,15 +28,19 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  padding-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 51px;
+    padding-bottom: 17px;
     order: 1;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
+    padding-top: 50px;
   }
 }
 
@@ -76,4 +94,15 @@
   width: 280px;
   margin: 0 auto;
   text-align: center;
+  padding-top: 44px;
+  padding-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 49px;
+    padding-bottom: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

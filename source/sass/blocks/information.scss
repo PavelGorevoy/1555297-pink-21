@@ -71,10 +71,12 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  padding-top: 90px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row-reverse;
     justify-content: flex-end;
+    padding-top: 6px;
   }
 
   @media (min-width: $desktop-width) {

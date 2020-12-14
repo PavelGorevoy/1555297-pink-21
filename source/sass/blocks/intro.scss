@@ -1,5 +1,8 @@
 .intro {
-  background: url("../../img/back-desktop.png") no-repeat center; //временно
+  overflow: hidden;
+  background-image: url("../../img/back-desktop.png"); //временно
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 @media (min-width: $tablet-width) {

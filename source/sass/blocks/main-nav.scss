@@ -4,7 +4,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -30px;
+  top: -50px;
   right: 20px;
   z-index: 2;
   display: block;
@@ -13,6 +13,10 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    top: -73px;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -31,8 +35,12 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: -30px;
+  top: -50px;
   right: 20px;
+
+  @media (min-width: $tablet-width) {
+    top: -73px;
+  }
 
   &::before,
   &::after {

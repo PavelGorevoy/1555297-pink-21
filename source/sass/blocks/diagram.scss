@@ -4,7 +4,7 @@
   }
 }
 
-@media (min-width: 230px) and (max-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .diagram__container {
     display: none;
   }
@@ -12,10 +12,11 @@
 
 .diagram__container {
   @include container;
-  min-height: 330px;
+  padding-top: 102px;
 
   @media (min-width: $desktop-width) {
-    min-height: 429px;
+    padding-top: 115px;
+    padding-bottom: 120px;
   }
 }
 
