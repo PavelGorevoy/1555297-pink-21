@@ -4,7 +4,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -50px;
+  top: -42px;
   right: 20px;
   z-index: 2;
   display: block;
@@ -15,7 +15,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    top: -73px;
+    top: -66px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,11 +35,11 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: -50px;
+  top: -42px;
   right: 20px;
 
   @media (min-width: $tablet-width) {
-    top: -73px;
+    top: -66px;
   }
 
   &::before,
@@ -62,7 +62,6 @@
     transform: rotate(-45deg);
   }
 }
-
 
 @media (max-width: $desktop-width) {
   .main-nav--closed .page-header__item {

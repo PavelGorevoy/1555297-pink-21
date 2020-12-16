@@ -23,7 +23,7 @@
       <div class="main-nav__wrapper">
         <ul class="page-header__list">
           <li class="page-header__item">
-            <a>
+            <a class="page-header__active">
               Главная
             </a>
           </li>
@@ -212,13 +212,13 @@
         </li>
       </ul>
       <div class="reviews__buttons">
-        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-        <button class="reviews__next" type="button">Следующий отзыв</button>
+        <button class="reviews__toggle reviews__toggle--prev" type="button"></button>
+        <button class="reviews__toggle reviews__toggle--next" type="button"></button>
       </div>
       <div class="reviews__toggles slider__toggles">
-        <button class="slider__toggle slider__toggle--current" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+        <button class="slider__toggle slider__toggle--current" type="button"></button>
+        <button class="slider__toggle" type="button"></button>
+        <button class="slider__toggle" type="button"></button>
       </div>
     </div>
   </section>
@@ -291,9 +291,9 @@
         </tbody>
       </table>
       <div class="prise__toggles slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle slider__toggle--current" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+        <button class="slider__toggle" type="button"></button>
+        <button class="slider__toggle slider__toggle--current" type="button"></button>
+        <button class="slider__toggle" type="button"></button>
       </div>
     </div>
     </div>
@@ -308,18 +308,20 @@
         </li>
         <li class="contact__sub-title">
           <span class="contact__list-title">Пишите:</span>
-          <a class="contact__item" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a class="contact__item contact__item--link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
         <li class="contact__sub-title">
           <span class="contact__list-title">Приезжайте в гости:</span>
           <span class="contact__item">ул. Большая <br> Конюшенная, 19/8</span>
         </li>
       </ul>
-      <iframe class="contact__map"
+      <div class="contact__map">
+      <iframe class="contact__map--item"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003226!2d30.320858716252705!3d59.93871916905397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1606495957775!5m2!1sru!2sru"
-              width="600" height="450" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
+              width="100%" height="200" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
               tabindex="0"></iframe>
-    </div>
+      </div>
+      </div>
   </section>
 </main>
 <footer class="page-footer">
