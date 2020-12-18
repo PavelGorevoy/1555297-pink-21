@@ -11,3 +11,38 @@
 .slider__item {
   text-align: center;
 }
+
+.slider__hidden {
+  display: none;
+}
+
+.slider__toggle {
+  position: relative;
+  width: 22px;
+  height: 15px;
+  margin-left: 3px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    bottom: 6px;
+    left: 5px;
+    border-radius: 50%;
+    background-color: #bec2c7;
+    display: block;
+  }
+
+  &--current::before {
+    border: 3px solid $dark-blue;
+    background: transparent;
+    bottom: 3px;
+  }
+}

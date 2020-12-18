@@ -3,6 +3,15 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
 }
 
 .contact__title {
@@ -12,6 +21,17 @@
   font-size: 24px;
   line-height: 120%;
   min-width: 222px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .contact__list {
@@ -24,14 +44,20 @@
   justify-content: center;
   width: 100%;
   min-width: 222px;
+  gap: 31px;
+  padding-top: 45px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: initial;
+    padding-top: 51px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
+    padding-top: 61px;
   }
 }
 
@@ -65,16 +91,69 @@
 }
 
 .contact__map {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 26px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 33px;
+    background: url("../../img/triangle-white-map.svg") no-repeat top center;
+    background-size: 100% 100%;
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      height: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 103px;
+    }
+  }
+}
+
+.contact__map--item {
+  position: relative;
+  overflow: hidden;
   width: 100%;
   min-height: 200px;
 
+
   @media (min-width: $tablet-width) {
     min-height: 374px;
-    max-width: 660px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 502px;
-    max-width: 1200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact__item--link {
+    &:hover {
+      color: $basic-black;
+      text-decoration: underline;
+    }
+
+    &:focus {
+      color: $dark-blue;
+      text-decoration: underline;
+    }
+
+    &:active {
+      opacity: 0.3;
+      text-decoration: none;
+    }
   }
 }
