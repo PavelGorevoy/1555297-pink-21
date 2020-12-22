@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="sass/blocks/form.scss">
 </head>
 <body class="page__body">
 <header class="page-header">
@@ -49,8 +50,9 @@
 </header>
 
 <script>
-  var navMain = document.querySelector('.main-nav');
-  var navToggle = document.querySelector('.main-nav__toggle');
+  var header = document.querySelector('.page-header');
+  var navMain = header.querySelector('.main-nav');
+  var navToggle = header.querySelector('.main-nav__toggle');
 
   navMain.classList.remove('main-nav--nojs');
 
@@ -58,9 +60,11 @@
     if (navMain.classList.contains('main-nav--closed')) {
       navMain.classList.remove('main-nav--closed');
       navMain.classList.add('main-nav--opened');
+      header.classList.add('page-header--open');
     } else {
       navMain.classList.add('main-nav--closed');
       navMain.classList.remove('main-nav--opened');
+      header.classList.remove('page-header--open');
     }
   });
 </script>
@@ -98,45 +102,45 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset class="form-selectable form-checkbox">
+    <fieldset class="form-selectable form-checkbox form-checkbox--indent">
       <legend class="form-selectable__title">Ваши безбашенные достижения в путешествии</legend>
       <ul class="form-checkbox__list">
         <li class="form-checkbox__item">
-          <input class="form-checkbox__input" type="checkbox" name="shark" id="self-with-shark" checked>
+          <input class="visually-hidden form-checkbox__input" type="checkbox" name="shark" id="self-with-shark" checked>
           <label class="form-selectable__label" for="self-with-shark">Сделал селфи с акулой</label>
         </li>
         <li class="form-checkbox__item">
-          <input class="form-checkbox__input" type="checkbox" name="beach" id="on-the-beach" checked>
+          <input class="visually-hidden form-checkbox__input" type="checkbox" name="beach" id="on-the-beach" checked>
           <label class="form-selectable__label" for="on-the-beach">Обгорел на пляже</label>
         </li>
         <li class="form-checkbox__item">
-          <input class="form-checkbox__input" type="checkbox" name="chuck" id="saw-chuck">
+          <input class="visually-hidden form-checkbox__input" type="checkbox" name="chuck" id="saw-chuck">
           <label class="form-selectable__label" for="saw-chuck">Видел Чака Норриса</label>
         </li>
         <li class="form-checkbox__item">
-          <input class="form-checkbox__input" type="checkbox" name="souvenirs" id="buy-souvenirs">
+          <input class="visually-hidden form-checkbox__input" type="checkbox" name="souvenirs" id="buy-souvenirs">
           <label class="form-selectable__label" for="buy-souvenirs">Накупил сувениров</label>
         </li>
         <li class="form-checkbox__item">
-          <input class="form-checkbox__input" type="checkbox" name="tower" id="keep-the-tower" checked>
+          <input class="visually-hidden form-checkbox__input" type="checkbox" name="tower" id="keep-the-tower" checked>
           <label class="form-selectable__label" for="keep-the-tower">Удержал башню</label>
         </li>
         <li class="form-checkbox__item">
-          <input class="form-checkbox__input" type="checkbox" name="hotel" id="destroyed-the-hotel">
+          <input class="visually-hidden form-checkbox__input" type="checkbox" name="hotel" id="destroyed-the-hotel">
           <label class="form-selectable__label" for="destroyed-the-hotel">Разгромил отель</label>
         </li>
       </ul>
     </fieldset>
-    <fieldset class="form-write form-number">
+    <fieldset class="form-write form-write--number form-number form-number--indent">
       <legend class="form-number__title">Контактная информация</legend>
       <ul class="form-number__list">
         <li class="form-number__item">
           <label for="number" class="form-write__label form-write__label--number">Номер телефона</label>
-          <input class="form-write__input" type="text" name="number" id="number" placeholder="Номер, пожалуйста">
+          <input class="form-write__input form-number__after" type="text" name="number" id="number" placeholder="Номер, пожалуйста">
         </li>
         <li class="form-number__item">
           <label for="email" class="form-write__label form-write__label--number">Адрес почты</label>
-          <input class="form-write__input" type="text" name="email" id="email" placeholder="Введите почту *">
+          <input class="form-write__input form-number__after" type="text" name="email" id="email" placeholder="Введите почту *">
         </li>
       </ul>
     </fieldset>
@@ -144,28 +148,27 @@
       <legend class="form-selectable__title">С каким приложением путешествовали?</legend>
       <ul class="form-platforms__list">
         <li class="form-platforms__item">
-          <input class="form-platforms__input" type="radio" name="platforms" id="ios" checked>
+          <input class="visually-hidden form-platforms__input" type="radio" name="platforms" id="ios" checked>
           <label class="form-selectable__label" for="ios">Pink для iOS</label>
         </li>
         <li class="form-platforms__item">
-          <input class="form-platforms__input" type="radio" name="platforms" id="android">
+          <input class="visually-hidden form-platforms__input" type="radio" name="platforms" id="android">
           <label class="form-selectable__label" for="android">Pink на Android</label>
         </li>
         <li class="form-platforms__item">
-          <input class="form-platforms__input" type="radio" name="platforms" id="windows">
+          <input class="visually-hidden form-platforms__input" type="radio" name="platforms" id="windows">
           <label class="form-selectable__label" for="windows">Windows Phone</label>
         </li>
       </ul>
     </fieldset>
-    <fieldset class="write">
+    <fieldset class="write write--indent">
       <legend class="write__title">Опишите свои эмоции</legend>
       <label>
-        <textarea class="write__area" id="note" name="note"
-                  placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <textarea class="write__area" id="note" name="note" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </label>
     </fieldset>
     <div class="form__submit">
-      <button class="button form__button form__button--submit" type="submit" name="submit-form">Отправить форму</button>
+      <button class="button button__form" type="submit" name="submit-form">Отправить форму</button>
       <p class="required">
         <small>
           <span class="required__marker">*</span> — обязательные поля

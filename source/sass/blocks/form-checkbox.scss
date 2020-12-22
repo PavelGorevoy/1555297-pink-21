@@ -1,14 +1,26 @@
 .form-checkbox {
   min-height: 604px;
 
+  @media (max-width: $tablet-width) {
+    position: relative;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 549px;
     order: 3;
+
+    &--indent {
+      margin-top: 61px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     min-height: 228px;
     width: 100%;
+
+    &--indent {
+      margin-top: 64px;
+    }
   }
 }
 
@@ -17,18 +29,81 @@
   display: grid;
   gap: 47px;
 
+  @media (max-width: $tablet-width) {
+    padding-top: 115px;
+  }
+
   @media (max-width: $mobile-width-only) {
     @include container;
   }
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    gap: inherit;
     padding-top: 54px;
+    padding-left: 60px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 47px 58px;
-    max-width: 812px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 56px 0 10px 62px;
   }
+}
+
+.form-checkbox__item {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 260px;
+  }
+}
+
+/*checkbox*/
+
+.form-checkbox__input {
+  width: 100%;
+}
+
+.form-checkbox__input + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 35px;
+  height: 35px;
+  background: #ffffff;
+  border: 2px solid $border-color;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.form-checkbox__input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 9px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.form-checkbox__input:hover + label::before,
+.form-checkbox__input:focus + label::before,
+.form-checkbox__input:focus:checked + label::before {
+  border: 2px solid $dark-blue;
+  border-radius: 1px;
+}
+
+.form-checkbox__input:active + label::before,
+.form-checkbox__input:active:checked + label::before {
+  border: 2px solid $red-color;
+  border-radius: 1px;
 }

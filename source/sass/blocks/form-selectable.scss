@@ -1,4 +1,6 @@
 .form-selectable {
+  margin: 0;
+  padding: 0;
   border: 2px solid $border-color;
   border-radius: 1px;
 }
@@ -18,13 +20,27 @@
   line-height: 18px;
   text-transform: uppercase;
 
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 42px;
+    left: 50px;
+  }
+
   @media (max-width: $mobile-width-only) {
     @include container;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 31px 0 31px;
   }
 }
 
 .form-selectable__label {
   @include fonts-stile;
+  position: relative;
   font-size: 18px;
   line-height: 30px;
+  padding-top: 6px;
+  padding-left: 57px;
+  cursor: pointer;
 }

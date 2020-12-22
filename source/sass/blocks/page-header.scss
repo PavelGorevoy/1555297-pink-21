@@ -1,6 +1,11 @@
 .page-header {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 3;
+}
+
+.page-header--open {
   background-color: $dark-blue;
-  position: static;
 }
 
 .page-header__wrapper {
@@ -44,7 +49,7 @@
     height: 40px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 147px;
   }
 }

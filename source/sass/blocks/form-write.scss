@@ -9,6 +9,16 @@
 
 .form-write--name {
   border: 0;
+  padding-bottom: 44px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
+.form-write--number {
+  padding-top: 42px;
+  padding-bottom: 44px;
 }
 
 .form-write__list {
@@ -53,8 +63,11 @@
   }
 
   &--number {
+    padding-left: 18px;
+
     @media (min-width: $tablet-width) {
       order: 1;
+      padding-top: 22px;
     }
   }
 }
@@ -63,6 +76,7 @@
   border: 2px solid $border-color;
   width: calc(100% - 30px);
   min-height: 59px;
+  border-radius: 1px;
 
   &::placeholder {
     @include fonts-stile;
@@ -76,5 +90,13 @@
     font-size: 18px;
     line-height: 30px;
     padding-left: 20px;
+  }
+
+  &:hover {
+    border-color: $dark-blue;
+  }
+
+  &:focus {
+    border-color: $red-color;
   }
 }

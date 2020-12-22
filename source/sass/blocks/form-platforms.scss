@@ -1,8 +1,14 @@
 .form-platforms {
   order: 2;
+  min-height: 340px;
+
+  @media (max-width: $tablet-width) {
+    position: relative;
+  }
 
   @media (min-width: $tablet-width) {
     order: 1;
+    min-height: 295px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,9 +26,50 @@
     @include container;
   }
 
+  @media (max-width: $tablet-width) {
+    padding-top: 111px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+    padding-left: 60px;
+  }
+
   @media (min-width: $desktop-width) {
     gap: 39px;
     padding-top: 54px;
     padding-left: 74px;
   }
+}
+
+.form-platforms__input + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 37px;
+  height: 37px;
+  background: $basic-white;
+  border: 2px solid $border-color;
+  border-radius: 50%;
+}
+
+.form-platforms__input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  width: 15px;
+  height: 15px;
+  background-color: $red-color;
+  border-radius: 50%;
+}
+
+.form-platforms__input:hover + label::before,
+.form-platforms__input:focus + label::before {
+  border: 2px solid $dark-blue;
+}
+
+.form-platforms__input:focus + label::before {
+  border: 2px solid $red-color;
 }

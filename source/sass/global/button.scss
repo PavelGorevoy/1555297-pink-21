@@ -1,5 +1,6 @@
 .button {
   @include fonts-stile;
+  cursor: pointer;
 }
 
 .button__intro--download {
@@ -43,5 +44,44 @@
 @media (min-width: $tablet-width) {
   .button__like {
     order: 1;
+  }
+}
+
+.button__form {
+  @include fonts-stile;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: $basic-white;
+  width: 276px;
+  height: 59px;
+  background-color: $green;
+  text-transform: uppercase;
+  border: 2px solid $green;
+  border-radius: 1px;
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
+    height: 59px;
+  }
+
+  &:hover {
+    background: #1c9b5e;
+    border: 2px solid #1c9b5e;
+  }
+
+  &:focus {
+    background: #1c9b5e;
+    border: 2px solid #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    color: $basic-white;
+    background: $border-color;
+    border: 2px solid $border-color;
   }
 }

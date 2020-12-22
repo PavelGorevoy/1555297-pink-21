@@ -3,8 +3,18 @@
   border-radius: 1px;
   order: 2;
 
+  @media (min-width: $tablet-width) {
+    &--indent {
+      margin-top: 61px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     width: 100%;
+
+    &--indent {
+      margin-top: 64px;
+    }
   }
 }
 
@@ -40,11 +50,21 @@
   text-align: center;
   color: $red-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 31px 0 31px;
+  }
 }
 
 .form-number__item {
   @include stile-list;
   margin: 0 auto;
+
+  @media (max-width: $desktop-width) {
+    &:first-child {
+      padding-bottom: 41px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -54,5 +74,24 @@
 
   @media (min-width: $desktop-width) {
     width: 371px;
+  }
+}
+
+.form-number__after {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 57px;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 2px solid $border-color;
+      background-color: $gray;
+    }
   }
 }
