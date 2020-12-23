@@ -26,12 +26,8 @@
     font-size: 21px;
   }
 
+  &:hover,
   &:focus {
-    background-color: $basic-white;
-    color: $red-color;
-  }
-
-  &:hover {
     background-color: $basic-white;
     color: $red-color;
   }
@@ -65,11 +61,7 @@
     height: 59px;
   }
 
-  &:hover {
-    background: #1c9b5e;
-    border: 2px solid #1c9b5e;
-  }
-
+  &:hover,
   &:focus {
     background: #1c9b5e;
     border: 2px solid #1c9b5e;
@@ -83,5 +75,9 @@
     color: $basic-white;
     background: $border-color;
     border: 2px solid $border-color;
+  }
+
+  &--modal {
+    margin: 0 auto;
   }
 }

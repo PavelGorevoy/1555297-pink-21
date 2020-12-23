@@ -45,7 +45,56 @@
   }
 }
 
+.modal__title {
+  @include fonts-stile;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 44px;
+  margin: 0 auto;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 49px;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    br {
+      display: none;
+    }
+  }
+}
+
+.modal__text {
+  @include fonts-stile;
+  font-size: 14px;
+  line-height: 24px;
+  width: 266px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    width: 309px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 378px;
+  }
+}
+
 .modal__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 163px;
   background-color: $gray;
   border-radius: 0 0 5px 5px;

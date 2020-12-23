@@ -106,11 +106,8 @@
   @include fonts-stile;
   color: $basic-white;
 
+  &:hover,
   &:focus {
-    color: $red-color;
-  }
-
-  &:hover {
     color: $red-color;
   }
 
@@ -135,10 +132,7 @@
   @media (min-width: $desktop-width) {
     border-bottom: 1px solid $basic-white;
 
-    &:hover {
-      border-bottom: 1px solid;
-    }
-
+    &:hover,
     &:focus {
       border-bottom: 1px solid;
     }

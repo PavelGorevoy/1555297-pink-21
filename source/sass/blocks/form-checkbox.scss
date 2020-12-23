@@ -1,11 +1,9 @@
 .form-checkbox {
   min-height: 604px;
-
-  @media (max-width: $tablet-width) {
-    position: relative;
-  }
+  position: relative;
 
   @media (min-width: $tablet-width) {
+    position: static;
     min-height: 549px;
     order: 3;
 
@@ -30,7 +28,7 @@
   gap: 47px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 115px;
+    padding-top: 86px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -65,11 +63,6 @@
 }
 
 /*checkbox*/
-
-.form-checkbox__input {
-  width: 100%;
-}
-
 .form-checkbox__input + label::before {
   content: "";
   position: absolute;

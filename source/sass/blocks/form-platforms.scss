@@ -1,14 +1,13 @@
 .form-platforms {
+  position: relative;
+  padding-bottom: 42px;
   order: 2;
-  min-height: 340px;
-
-  @media (max-width: $tablet-width) {
-    position: relative;
-  }
 
   @media (min-width: $tablet-width) {
-    order: 1;
+    position: static;
     min-height: 295px;
+    padding-bottom: 0;
+    order: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,11 +26,11 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding-top: 111px;
+    padding-top: 82px;
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 35px;
+    padding-top: 49px;
     padding-left: 60px;
   }
 

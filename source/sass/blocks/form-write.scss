@@ -92,11 +92,12 @@
     padding-left: 20px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: $dark-blue;
   }
 
-  &:focus {
+  &:active {
     border-color: $red-color;
   }
 }

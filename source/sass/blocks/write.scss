@@ -77,16 +77,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 39px;
+    margin-top: 31px;
     width: calc(810px - 20px);
     height: calc(118px - 22px);
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: $dark-blue;
   }
 
-  &:focus {
+  &:active {
     border-color: $red-color;
   }
 }

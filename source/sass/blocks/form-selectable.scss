@@ -21,9 +21,9 @@
   text-transform: uppercase;
 
   @media (max-width: $tablet-width) {
-    position: absolute;
+    position: relative;
     top: 42px;
-    left: 50px;
+    left: 0;
   }
 
   @media (max-width: $mobile-width-only) {
