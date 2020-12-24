@@ -39,7 +39,7 @@
   display: block;
 
   &:last-child {
-    @media (max-width: $tablet-width) {
+    @media (max-width: $mobile-width-only) {
       padding-top: 45px;
     }
   }
