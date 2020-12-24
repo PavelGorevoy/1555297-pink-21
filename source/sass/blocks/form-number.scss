@@ -79,19 +79,17 @@
 
 .form-number__icon {
   @media (min-width: $tablet-width) {
-    position: relative;
-
     &::after {
       content: "";
       position: absolute;
+      display: block;
       top: 0;
       right: 0;
-      width: 60px;
-      height: 57px;
-      background-repeat: no-repeat;
-      background-position: center;
+      width: 59px;
+      height: 59px;
       border: 2px solid $border-color;
       background-color: $gray;
+      z-index: 1;
     }
   }
 }
