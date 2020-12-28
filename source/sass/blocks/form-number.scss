@@ -1,9 +1,11 @@
 .form-number {
-  border: 2px solid $border-color;
-  border-radius: 1px;
+  border: 0;
   order: 2;
 
   @media (min-width: $tablet-width) {
+    border: 2px solid $border-color;
+    border-radius: 1px;
+
     &--indent {
       margin-top: 61px;
     }
@@ -15,16 +17,6 @@
     &--indent {
       margin-top: 64px;
     }
-  }
-}
-
-@media (max-width: $mobile-width-only) {
-  .form-number {
-    border: 0;
-  }
-
-  .form-number__title {
-    display: none;
   }
 }
 
@@ -47,11 +39,13 @@
 }
 
 .form-number__title {
-  text-align: center;
-  color: $red-color;
-  text-transform: uppercase;
+  display: none;
 
   @media (min-width: $tablet-width) {
+    display: initial;
+    text-align: center;
+    color: $red-color;
+    text-transform: uppercase;
     padding: 0 31px 0 31px;
   }
 }
@@ -60,20 +54,22 @@
   @include stile-list;
   margin: 0 auto;
 
-  @media (max-width: $tablet-width-max) {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 496px;
+
     &:first-child {
       padding-bottom: 41px;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    width: 496px;
-  }
-
   @media (min-width: $desktop-width) {
     width: 371px;
+
+    &:first-child {
+      padding-bottom: 0;
+    }
   }
 }
 

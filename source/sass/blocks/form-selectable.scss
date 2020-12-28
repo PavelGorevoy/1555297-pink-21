@@ -1,14 +1,13 @@
 .form-selectable {
   margin: 0;
   padding: 0;
-  border: 2px solid $border-color;
-  border-radius: 1px;
-}
+  border: 0;
+  background-color: $gray;
 
-@media (max-width: $mobile-width-only) {
-  .form-selectable {
-    background-color: $gray;
-    border: 0;
+  @media (min-width: $tablet-width) {
+    border: 2px solid $border-color;
+    border-radius: 1px;
+    background-color: transparent;
   }
 }
 

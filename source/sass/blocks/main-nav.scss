@@ -63,7 +63,7 @@
   }
 }
 
-@media (max-width: $tablet-width-max) {
+@media (max-width: $desktop-width - 1px) {
   .main-nav--closed .page-header__item {
     display: none;
 
