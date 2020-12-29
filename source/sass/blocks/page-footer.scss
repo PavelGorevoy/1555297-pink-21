@@ -37,13 +37,11 @@
   display: block;
   width: 145px;
   height: 40px;
-
-  @media (max-width: $tablet-width) {
-    margin: 0 auto;
-  }
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

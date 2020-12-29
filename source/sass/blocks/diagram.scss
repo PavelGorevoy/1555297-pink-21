@@ -1,18 +1,23 @@
-@media (min-width: $desktop-width) {
-  .diagram {
+.diagram {
+  @media (min-width: $desktop-width) {
     background-color: $gray;
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width-only) {
   .diagram__container {
     display: none;
   }
 }
 
 .diagram__container {
-  @include container;
-  padding-top: 102px;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    @include container;
+    display: block;
+    padding-top: 102px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 115px;
