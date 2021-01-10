@@ -81,3 +81,109 @@
 .button--modal {
   margin: 0 auto;
 }
+
+.button--like {
+  border: 0;
+  width: 20px;
+  height: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 30px;
+  }
+}
+
+.button--loading {
+  border: 0;
+  cursor: pointer;
+}
+
+.button--crop {
+  width: 44px;
+  height: 44px;
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.button--fill {
+  width: 48px;
+  height: 43px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 43px;
+  }
+}
+
+.button--contrast {
+  width: 32px;
+  height: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.button--loading--inactive path {
+  fill: $dark-blue;
+  fill-opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    fill: $red-color;
+    fill-opacity: 1;
+  }
+}
+
+.button--loading-submit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  width: 280px;
+  height: 55px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+    margin: 0;
+  }
+}
+
+.button--post {
+  color: $red-color;
+  border: 3px solid $red-color;
+}
+
+.button--reset {
+  opacity: 0.1;
+  border: 3px solid $dark-blue;
+}

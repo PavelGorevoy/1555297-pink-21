@@ -1,10 +1,10 @@
 .post__list {
   @include container;
   display: grid;
+  gap: 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,20 +13,44 @@
   }
 }
 
-.post__top-img {
-  display: block;
+.post__top {
   margin: 0 auto;
-  min-width: 320px;
-  min-height: 137px;
+  margin-bottom: 22px;
+  min-height: 327px;
+  width: auto;
+  max-width: 320px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    min-width: 660px;
-    min-height: 509px;
+    max-width: 700px;
+    margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 1200px;
-    min-height: 509px;
+    max-width: 1200px;
+    margin-bottom: 47px;
+  }
+}
+
+.post__top-img {
+  position: relative;
+  width: 100%;
+  height: 137px;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 509px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 506px;
   }
 }
 
@@ -42,12 +66,18 @@
 }
 
 .post__review {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: $gray;
   min-height: 121px;
+  padding-top: 25px;
+  padding-left: 17px;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
     min-height: 155px;
-    text-align: left;
+    padding-left: 30px;
   }
 
   &--top {
@@ -55,9 +85,8 @@
     min-height: 192px;
 
     @media (min-width: $tablet-width) {
-      display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      flex-direction: row;
       align-items: baseline;
       min-height: 121px;
     }
@@ -80,22 +109,31 @@
   font-weight: 300;
   font-size: 12px;
   line-height: 24px;
+  height: 100%;
 }
 
 .post__quote {
   @include fonts-stile;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    order: 2;
     width: 100%;
+    padding-right: 38px;
+
+    &--top {
+      order: 2;
+      width: 100%;
+      padding-bottom: 32px;
+    }
   }
 }
 
 .post__button {
   display: flex;
   align-items: baseline;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -108,4 +146,11 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
+  padding-left: 18px;
+  margin-right: 31px;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    padding-left: 0;
+  }
 }
