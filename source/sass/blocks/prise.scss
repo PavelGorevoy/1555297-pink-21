@@ -17,17 +17,17 @@
 .prise__wrapper {
   width: 280px;
   margin: 0 auto;
-  padding-top: 91px;
+  padding-top: 100px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 88px;
+    padding-top: 95px;
     padding-bottom: 71px;
     width: 620px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 145px;
-    padding-bottom: 91px;
+    padding-top: 149px;
+    padding-bottom: 94px;
     width: 940px;
   }
 }
@@ -181,8 +181,8 @@
   width: 280px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 45px;
-  padding-bottom: 49px;
+  padding-top: 32px;
+  padding-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     display: none;
