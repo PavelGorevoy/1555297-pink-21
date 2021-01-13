@@ -1,17 +1,17 @@
 .form-platforms {
   position: relative;
-  padding-bottom: 42px;
+  padding-bottom: 51px;
   order: 2;
 
   @media (min-width: $tablet-width) {
     position: static;
-    min-height: 295px;
+    min-height: 302px;
     padding-bottom: 0;
     order: 1;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 406px;
+    max-width: 428px;
     width: 50%;
   }
 }
@@ -19,11 +19,11 @@
 .form-platforms__list {
   @include stile-list;
   display: grid;
-  gap: 38px;
+  gap: 45px;
 
   @media (max-width: $mobile-width-only) {
     @include container;
-    padding-top: 82px;
+    padding-top: 92px;
   }
 
   @media (min-width: $tablet-width) {
