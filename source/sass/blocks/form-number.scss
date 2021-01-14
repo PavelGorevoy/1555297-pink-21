@@ -7,7 +7,7 @@
     border-radius: 1px;
 
     &--indent {
-      margin-top: 61px;
+      margin-top: 57px;
     }
   }
 
@@ -15,7 +15,7 @@
     width: 100%;
 
     &--indent {
-      margin-top: 64px;
+      margin-top: 55px;
     }
   }
 }
@@ -25,6 +25,8 @@
 
   @media (max-width: $mobile-width-only) {
     @include container;
+    display: grid;
+    grid-gap: 18px;
   }
 
   @media (min-width: $tablet-width) {
@@ -60,7 +62,7 @@
     width: 496px;
 
     &:first-child {
-      padding-bottom: 41px;
+      padding-bottom: 30px;
     }
   }
 

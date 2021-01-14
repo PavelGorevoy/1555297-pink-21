@@ -3,14 +3,14 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-top: 50px;
+  padding-top: 43px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
+    padding-top: 43px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 74px;
+    padding-top: 59px;
   }
 }
 
@@ -44,26 +44,45 @@
   justify-content: center;
   width: 100%;
   min-width: 222px;
-  gap: 31px;
-  padding-top: 45px;
+  gap: 20px;
+  padding-top: 32px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
     gap: initial;
-    padding-top: 51px;
+    padding-top: 33px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 61px;
+    padding-top: 8px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .contact__sub-title {
+.contact__sub-title {
+  @media (min-width: $tablet-width) {
     width: 50%;
+  }
+
+  @media (max-width: $desktop-width - 1px) {
+    &--position {
+      padding-top: 45px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+
+    &--box {
+      order: 2;
+    }
+
+    &--position {
+      order: 1;
+      padding-top: 31px;
+    }
   }
 }
 
@@ -80,6 +99,10 @@
   font-size: 18px;
   line-height: 25px;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .contact__item {
@@ -94,14 +117,14 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 41px;
+  padding-top: 33px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 30px;
+    padding-top: 27px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 26px;
+    padding-top: 19px;
   }
 
   &::before {

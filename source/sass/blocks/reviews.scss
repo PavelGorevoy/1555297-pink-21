@@ -8,21 +8,21 @@
 }
 
 .reviews__wrapper {
-  padding-top: 50px;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 109px;
+    padding-top: 107px;
     padding-bottom: 3px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 193px;
+    padding-top: 184px;
     padding-bottom: 41px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 58px;
+      top: 71px;
       left: 430px;
       width: 79px;
       height: 63px;
@@ -42,19 +42,19 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  padding-bottom: 31px;
+  padding-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-top: 51px;
-    padding-bottom: 17px;
+    padding-top: 33px;
+    padding-bottom: 1px;
     order: 1;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
-    padding-top: 50px;
+    padding-top: 36px;
   }
 }
 
@@ -70,8 +70,11 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    font-size: 18px;
     order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
   }
 }
 
@@ -108,12 +111,11 @@
   width: 280px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 44px;
-  padding-bottom: 40px;
+  padding-top: 22px;
+  padding-bottom: 32px;
 
-  @media (min-width: $desktop-width) {
-    padding-top: 49px;
-    padding-bottom: 17px;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 13px;
   }
 
   @media (min-width: $desktop-width) {
@@ -123,7 +125,7 @@
 
 .reviews__toggle {
   position: absolute;
-  top: 220px;
+  top: 212px;
   width: 22px;
   height: 41px;
   border: none;

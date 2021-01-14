@@ -2,11 +2,11 @@
   min-height: 284px;
 
   @media (min-width: $tablet-width) {
-    min-height: 127px;
+    min-height: 118px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 197px;
+    min-height: 190px;
   }
 }
 
@@ -14,22 +14,23 @@
   @include fonts-stile;
   font-size: 14px;
   line-height: 18px;
+  padding: 7px 15px 0 0;
 }
 
 .page-footer__wrapper {
   @include container;
   display: grid;
   gap: 41px;
-  padding-top: 40px;
+  padding-top: 33px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr min-content 1fr;
     gap: normal;
-    padding-top: 36px;
+    padding-top: 27px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 70px;
+    padding-top: 75px;
   }
 }
 
@@ -50,9 +51,22 @@
 }
 
 .page-footer__copyright {
+  display: flex;
   text-align: center;
+  align-content: baseline;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     text-align: right;
+    margin: 0;
+    justify-content: flex-end;
+    padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    b {
+      font-size: 18px;
+      line-height: 18px;
+    }
   }
 }

@@ -1,5 +1,5 @@
 .form-checkbox {
-  min-height: 604px;
+  min-height: 622px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -8,7 +8,7 @@
     order: 3;
 
     &--indent {
-      margin-top: 61px;
+      margin-top: 56px;
     }
   }
 
@@ -17,7 +17,7 @@
     width: 100%;
 
     &--indent {
-      margin-top: 64px;
+      margin-top: 58px;
     }
   }
 }
@@ -25,18 +25,18 @@
 .form-checkbox__list {
   @include stile-list;
   display: grid;
-  gap: 47px;
+  gap: 50px;
 
   @media (max-width: $mobile-width-only) {
     @include container;
-    padding-top: 86px;
+    padding-top: 98px;
   }
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     gap: inherit;
-    padding-top: 54px;
+    padding-top: 46px;
     padding-left: 60px;
     margin: 0 auto;
   }
@@ -45,7 +45,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 56px 0 10px 62px;
+    padding: 45px 0 10px 58px;
   }
 }
 
