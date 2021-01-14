@@ -120,6 +120,21 @@
       }
     }
   }
+
+  &--catalog {
+    width: 172px;
+    margin: 0 auto;
+    padding-top: 15px;
+
+    @media (min-width: $tablet-width) {
+      width: 358px;
+      padding-top: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 76px;
+    }
+  }
 }
 
 .intro__button {

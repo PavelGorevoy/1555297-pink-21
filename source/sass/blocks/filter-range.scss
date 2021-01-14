@@ -1,6 +1,10 @@
 .filter-range {
   width: 240px;
 
+  &--position {
+    padding-top: 23px;
+  }
+
   &--inactive {
     display: none;
   }

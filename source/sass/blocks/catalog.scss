@@ -14,17 +14,22 @@
   justify-content: center;
   font-size: 14px;
   line-height: 30px;
-  min-height: 184px;
+  min-height: 183px;
   width: 280px;
 
   @media (min-width: $tablet-width) {
-    min-height: 228px;
+    min-height: 222px;
     width: 440px;
     font-size: 18px;
+    padding-top: 6px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 242px;
+    min-height: 234px;
     width: 572px;
   }
 }
