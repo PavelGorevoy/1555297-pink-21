@@ -66,9 +66,9 @@
     width: 50%;
   }
 
-  @media (max-width: $desktop-width - 1px) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     &--position {
-      padding-top: 45px;
+      padding-top: 55px;
     }
   }
 

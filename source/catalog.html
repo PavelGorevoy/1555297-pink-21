@@ -95,7 +95,11 @@
           <div class="post__list">
             <div class="post__item">
               <a href="#">
-                <img class="post__img" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фото пользователей">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                  <img class="post__img" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователей">
+                </picture>
               </a>
               <div class="post__review">
                 <div class="post__box">
@@ -117,7 +121,11 @@
             </div>
             <div class="post__item">
               <a href="#">
-                <img class="post__img" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фото пользователей">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                  <img class="post__img" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователей">
+                </picture>
               </a>
               <div class="post__review post__review--third">
                 <div class="post__box">
@@ -138,7 +146,11 @@
             </div>
             <div class="post__item">
               <a href="#">
-                <img class="post__img" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фото пользователей">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                  <img class="post__img" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователей">
+                </picture>
               </a>
               <div class="post__review post__review--fourth">
                 <div class="post__box">
@@ -160,7 +172,11 @@
             </div>
             <div class="post__item">
               <a href="#">
-                <img class="post__img" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фото пользователей">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                  <img class="post__img" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователей">
+                </picture>
               </a>
               <div class="post__review post__review--fifth">
                 <div class="post__box">
@@ -181,7 +197,11 @@
             </div>
             <div class="post__item">
               <a href="#">
-                <img class="post__img" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фото пользователей">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                  <img class="post__img" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователей">
+                </picture>
               </a>
               <div class="post__review post__review--sixth">
                 <div class="post__box">
@@ -202,7 +222,11 @@
             </div>
             <div class="post__item">
               <a href="#">
-                <img class="post__img" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фото пользователей">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                  <img class="post__img" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователей">
+                </picture>
               </a>
               <div class="post__review post__review--seventh">
                 <div class="post__box">
@@ -314,13 +338,22 @@
     <div class="social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+          <a class="social__link social__link--twitter" href="#">
+            <span class="visually-hidden">Мы в Твиттере</span>
+            <img src="img/twitter.svg" alt="twitter">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            <img src="img/facebook.svg" alt="facebook">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">Мы на Ютубе</a>
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Мы на Ютубе</span>
+            <img src="img/youtube.svg" alt="youtube">
+          </a>
         </li>
       </ul>
     </div>

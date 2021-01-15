@@ -1,4 +1,6 @@
 .diagram {
+  display: block;
+
   @media (min-width: $desktop-width) {
     background-color: $gray;
   }
@@ -15,13 +17,59 @@
 
   @media (min-width: $tablet-width) {
     @include container;
-    display: block;
-    padding-top: 102px;
+    position: relative;
+    display: flex;
+    width: 620px;
+    padding-top: 93px;
+    background: url("../../img/icon-timer.svg") no-repeat;
+    background-position: 19px 51px;
+    background-size: 238px 276px;
+    height: 244px;
+
+    ::before {
+      content: "24";
+      position: absolute;
+      top: 107px;
+      left: 38px;
+      display: block;
+      box-sizing: border-box;
+      width: 202px;
+      height: 202px;
+      padding-top: 69px;
+      padding-left: 31px;
+      font-size: 96px;
+      font-weight: 700;
+      color: #d22856;
+      border: 14px solid #d22856;
+      border-radius: 50%;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 140px;
-    padding-bottom: 100px;
+    padding-top: 142px;
+    padding-bottom: 73px;
+    background-size: 298px 345px;
+    background-position: 0 46px;
+    width: 940px;
+
+    ::before {
+      left: 26px;
+      top: 117px;
+      width: 252px;
+      height: 252px;
+      padding-top: 91px;
+      padding-left: 40px;
+      font-size: 120px;
+      border-width: 17px;
+    }
+  }
+}
+
+.diagram__box {
+  padding-left: 330px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 372px;
   }
 }
 
@@ -50,11 +98,20 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 24px;
+    margin: 0;
+    padding: 10px 0 10px 0;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
+    width: 534px;
+    padding-top: 23px;
+    padding-bottom: 30px;
+
+    br {
+      display: none;
+    }
   }
 }
 

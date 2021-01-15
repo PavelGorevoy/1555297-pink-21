@@ -9,3 +9,34 @@
   gap: 14px;
   vertical-align: middle;
 }
+
+.social__item {
+  width: 48px;
+  height: 48px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.social__link {
+  &--twitter {
+    img {
+      padding-top: 18px;
+      padding-left: 16px;
+    }
+  }
+
+  &--facebook {
+    img {
+      padding-top: 16px;
+      padding-left: 20px;
+    }
+  }
+
+  &--youtube {
+    img {
+      padding-top: 18px;
+      padding-left: 18px;
+    }
+  }
+}
