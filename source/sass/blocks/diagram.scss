@@ -21,28 +21,10 @@
     display: flex;
     width: 620px;
     padding-top: 93px;
-    background: url("../../img/icon-timer.svg") no-repeat;
+    background: url("../../img/timer.svg") no-repeat;
     background-position: 19px 51px;
     background-size: 238px 276px;
     height: 244px;
-
-    ::before {
-      content: "24";
-      position: absolute;
-      top: 107px;
-      left: 38px;
-      display: block;
-      box-sizing: border-box;
-      width: 202px;
-      height: 202px;
-      padding-top: 69px;
-      padding-left: 31px;
-      font-size: 96px;
-      font-weight: 700;
-      color: #d22856;
-      border: 14px solid #d22856;
-      border-radius: 50%;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -51,17 +33,6 @@
     background-size: 298px 345px;
     background-position: 0 46px;
     width: 940px;
-
-    ::before {
-      left: 24px;
-      top: 117px;
-      width: 252px;
-      height: 252px;
-      padding-top: 91px;
-      padding-left: 40px;
-      font-size: 120px;
-      border-width: 18px;
-    }
   }
 }
 
