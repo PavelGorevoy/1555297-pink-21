@@ -37,6 +37,22 @@
   height: 139px;
   overflow: hidden;
 
+  ::after {
+    content: "Панорама дня";
+    position: absolute;
+    top: 1px;
+    right: 21px;
+    display: block;
+    padding: 6px 19px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: "Open Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: $basic-white;
+    background-color: $red-color;
+  }
+
   img {
     position: absolute;
     top: 50%;
@@ -46,10 +62,19 @@
 
   @media (min-width: $tablet-width) {
     height: 509px;
+
+    ::after {
+      top: 57px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     height: 506px;
+
+    ::after {
+      top: 54px;
+      right: 131px;
+    }
   }
 }
 
@@ -146,15 +171,25 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
+  width: 232px;
+
+  &--top {
+    width: 100%;
+  }
 
   @media (min-width: $tablet-width) {
-    width: 100%;
-    padding-right: 38px;
-
     &--top {
       order: 2;
       width: 100%;
       padding-bottom: 9px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 246px;
+
+    &--top {
+      width: 100%;
     }
   }
 }
