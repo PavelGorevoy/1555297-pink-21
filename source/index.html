@@ -77,6 +77,13 @@
                 Доступно для iPhone, iPad, Android, <br>
                 Windows Phone, OS X, Windows 8
               </p>
+              <div class="intro__img">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+                  <img src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="">
+                </picture>
+              </div>
             </div>
           </div>
         </div>
@@ -123,22 +130,32 @@
             </li>
           </ul>
           <div class="information__images">
-            <img class="information__img information__img--hide" src="https://via.placeholder.com/150x150" width="157" height="250" alt="PINK phone">
-            <img class="information__img information__img--hide" src="https://via.placeholder.com/150x150" width="157" height="250" alt="PINK phone">
-            <img class="information__img" src="https://via.placeholder.com/150x150" width="157" height="250" alt="PINK phone">
+            <picture>
+              <img class="information__img information__img--hide" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="PINK phone">
+            </picture>
+            <picture>
+              <img class="information__img information__img--hide" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="PINK phone">
+            </picture>
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+              <img class="information__img" src="img/iphone-screen-3-tablet@1x.png" srcset="img/iphone-screen-3-tablet@2x.png 2x" alt="PINK phone">
+            </picture>
           </div>
         </div>
       </div>
       <div class="diagram">
         <div class="diagram__container">
-          <span class="diagram__title">Эффект <br> на 24 часа!</span>
-          <p class="diagram__text">
-            Британские ученые провели исследования <br>
-            и доказали, что положительный эффект <br>
-            от использования приложения длится <br>
-            целые сутки!
-          </p>
-          <a class="diagram__link" href="#">Узнать больше об исследовании</a>
+          <div class="diagram__box">
+            <span class="diagram__title">Эффект <br> на 24 часа!</span>
+            <p class="diagram__text">
+              Британские ученые провели исследования <br>
+              и доказали, что положительный эффект <br>
+              от использования приложения длится <br>
+              целые сутки!
+            </p>
+            <a class="diagram__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </div>
     </div>
@@ -208,76 +225,76 @@
     <div class="prise__slider">
       <h2 class="visually-hidden">Цена</h2>
       <div class="prise__wrapper">
-      <table class="prise__table">
-        <tbody>
-        <tr class="prise__header">
-          <th class="prise--hidden">&nbsp;</th>
-          <th class="prise__header-cell">
-            <span class="prise__title">База</span>
-            <span class="prise__caption">1,99 USD</span>
-          </th>
-          <th class="prise__header-cell prise__header-cell--hit">
-            <span class="prise__title">Стандарт</span>
-            <span class="prise__caption">3,99 USD</span>
-          </th>
-          <th class="prise__header-cell">
-            <span class="prise__title">Анлим</span>
-            <span class="prise__caption">9,99 USD</span>
-          </th>
-        </tr>
-        <tr class="prise__line">
-          <td class="prise__information prise__information--base">Розовый фильтр</td>
-          <td class="prise__information">
-            Розовый фильтр
-            <span class="prise__marker prise__marker--yes"></span>
-          </td>
-          <td class="prise__information">
-            Розовый фильтр
-            <span class="prise__marker prise__marker--yes"></span>
-          </td>
-          <td class="prise__information">
-            Розовый фильтр
-            <span class="prise__marker prise__marker--yes"></span>
-          </td>
-        </tr>
-        <tr class="prise__line">
-          <td class="prise__information prise__information--base">Смайлики</td>
-          <td class="prise__information">
-            Смайлики
-            <span class="prise__marker prise__marker--no"></span>
-          </td>
-          <td class="prise__information">
-            Смайлики
-            <span class="prise__marker prise__marker--yes"></span>
-          </td>
-          <td class="prise__information">
-            Смайлики
-            <span class="prise__marker prise__marker--yes"></span>
-          </td>
-        </tr>
-        <tr class="prise__line">
-          <td class="prise__information prise__information--base">Комментарии</td>
-          <td class="prise__information">
-            Комментарии
-            <span class="prise__marker prise__marker--no"></span>
-          </td>
-          <td class="prise__information">
-            Комментарии
-            <span class="prise__marker prise__marker--no"></span>
-          </td>
-          <td class="prise__information">
-            Комментарии
-            <span class="prise__marker prise__marker--yes"></span>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-      <div class="prise__toggles slider__toggles">
-        <button class="slider__toggle" type="button"></button>
-        <button class="slider__toggle slider__toggle--current" type="button"></button>
-        <button class="slider__toggle" type="button"></button>
+        <table class="prise__table">
+          <tbody>
+          <tr class="prise__header">
+            <th class="prise--hidden">&nbsp;</th>
+            <th class="prise__header-cell">
+              <span class="prise__title">База</span>
+              <span class="prise__caption">1,99 USD</span>
+            </th>
+            <th class="prise__header-cell prise__header-cell--hit">
+              <span class="prise__title prise__title--hit">Стандарт</span>
+              <span class="prise__caption">3,99 USD</span>
+            </th>
+            <th class="prise__header-cell">
+              <span class="prise__title">Анлим</span>
+              <span class="prise__caption">9,99 USD</span>
+            </th>
+          </tr>
+          <tr class="prise__line">
+            <td class="prise__information prise__information--base">Розовый фильтр</td>
+            <td class="prise__information">
+              Розовый фильтр
+              <span class="prise__marker prise__marker--yes"></span>
+            </td>
+            <td class="prise__information">
+              Розовый фильтр
+              <span class="prise__marker prise__marker--yes"></span>
+            </td>
+            <td class="prise__information">
+              Розовый фильтр
+              <span class="prise__marker prise__marker--yes"></span>
+            </td>
+          </tr>
+          <tr class="prise__line">
+            <td class="prise__information prise__information--base">Смайлики</td>
+            <td class="prise__information">
+              Смайлики
+              <span class="prise__marker prise__marker--no"></span>
+            </td>
+            <td class="prise__information">
+              Смайлики
+              <span class="prise__marker prise__marker--yes"></span>
+            </td>
+            <td class="prise__information">
+              Смайлики
+              <span class="prise__marker prise__marker--yes"></span>
+            </td>
+          </tr>
+          <tr class="prise__line">
+            <td class="prise__information prise__information--base">Комментарии</td>
+            <td class="prise__information">
+              Комментарии
+              <span class="prise__marker prise__marker--no"></span>
+            </td>
+            <td class="prise__information">
+              Комментарии
+              <span class="prise__marker prise__marker--no"></span>
+            </td>
+            <td class="prise__information">
+              Комментарии
+              <span class="prise__marker prise__marker--yes"></span>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="prise__toggles slider__toggles">
+          <button class="slider__toggle" type="button"></button>
+          <button class="slider__toggle slider__toggle--current" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
+        </div>
       </div>
-    </div>
     </div>
   </section>
   <section class="contact">
@@ -298,12 +315,12 @@
         </li>
       </ul>
       <div class="contact__map">
-      <iframe class="contact__map--item"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003226!2d30.320858716252705!3d59.93871916905397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1606495957775!5m2!1sru!2sru"
-              width="100%" height="200" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
-              tabindex="0"></iframe>
+        <iframe class="contact__map--item"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003226!2d30.320858716252705!3d59.93871916905397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1606495957775!5m2!1sru!2sru"
+                width="100%" height="200" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
       </div>
-      </div>
+    </div>
   </section>
 </main>
 <footer class="page-footer">
@@ -319,13 +336,22 @@
     <div class="social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+          <a class="social__link social__link--twitter" href="#">
+            <span class="visually-hidden">Мы в Твиттере</span>
+            <img src="img/twitter.svg" alt="twitter">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            <img src="img/facebook.svg" alt="facebook">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">Мы на Ютубе</a>
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Мы на Ютубе</span>
+            <img src="img/youtube.svg" alt="youtube">
+          </a>
         </li>
       </ul>
     </div>

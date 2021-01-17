@@ -174,10 +174,20 @@
   border: 0;
   cursor: pointer;
 
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/loading-mobilet@2x.jpg");
+    background-size: 280px 374px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 300px;
     height: 400px;
     background: url("../../img/loading-tabilet.jpg") center no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/loading-tabilet@2x.jpg");
+      background-size: 300px 400px;
+    }
   }
 }
 

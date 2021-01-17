@@ -1,13 +1,39 @@
 .intro {
+  background-color: $dark-blue;
   margin-top: -66px;
   overflow: hidden;
-  background-image: url("../../img/back-desktop.png"); //временно
+  background-image: url("../../img/back-tablet.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top;
   z-index: 1;
+
+  @media (max-width: $mobile-width-only) {
+    background-size: 659px 472px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: -110px;
+    background-image: url("../../img/back-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-tablet@2x.jpg");
+      background-size: 1000px 729px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-desktop@2x.jpg");
+      background-size: 2560px 853px;
+    }
   }
 }
 
@@ -21,7 +47,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 733px;
+  height: 732px;
   width: auto;
   max-width: 658px;
 
@@ -58,7 +84,7 @@
     font-size: 50px;
     line-height: 68px;
     width: 300px;
-    padding-top: 118px;
+    padding-top: 117px;
   }
 }
 
@@ -75,11 +101,15 @@
 }
 
 .intro__description {
+  position: relative;
   padding-top: 13px;
   padding-bottom: 33px;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding-top: 25px;
+    width: 300px;
   }
 
   @media (min-width: $desktop-width) {
@@ -97,6 +127,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+    z-index: 3;
   }
 
   &--page {
@@ -165,5 +196,30 @@
 
   @media (min-width: $desktop-width) {
     min-height: 394px;
+  }
+}
+
+.intro__img {
+  img {
+    position: absolute;
+    top: -463px;
+    left: -20px;
+    width: 259px;
+    height: 286px;
+
+    @media (min-width: $tablet-width) {
+      top: -358px;
+      left: -40px;
+      width: 700px;
+      height: 545px;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -433px;
+      left: 16px;
+      width: 1050px;
+      height: 645px;
+    }
   }
 }

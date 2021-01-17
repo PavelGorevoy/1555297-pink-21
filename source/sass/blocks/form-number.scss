@@ -58,6 +58,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    position: relative;
     flex-direction: column;
     width: 496px;
 
@@ -80,14 +81,21 @@
     &::after {
       content: "";
       position: absolute;
-      display: block;
-      top: 0;
+      top: 5px;
       right: 0;
-      width: 59px;
-      height: 59px;
-      border: 2px solid $border-color;
-      background-color: $gray;
-      z-index: 1;
+      display: block;
+      width: 60px;
+      height: 57px;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 2px solid #e5e5e5;
+      background-color: #f2f2f2;
+    }
+
+    &--phone {
+      &::after {
+        background-image: url("../../img/phone-icon.svg");
+      }
     }
   }
 }
