@@ -35,7 +35,6 @@
     box-shadow: 0 8px 0 0 $basic-white, 0 16px 0 0 $basic-white;
   }
 
-
   &:hover::before,
   &:focus::before {
     background-color: $red-color;
@@ -45,7 +44,6 @@
   &:active::before {
     opacity: 0.3;
   }
-
 }
 
 .main-nav--opened .main-nav__toggle {
