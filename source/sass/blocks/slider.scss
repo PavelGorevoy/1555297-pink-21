@@ -28,6 +28,16 @@
   cursor: pointer;
   outline: none;
 
+  &:hover::before,
+  &:focus::before {
+    background-color: $dark-blue;
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.1;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -42,7 +52,7 @@
 
   &--current::before {
     border: 3px solid $dark-blue;
-    background: transparent;
+    background: $basic-white;
     bottom: 3px;
   }
 }

@@ -37,6 +37,8 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    width: 880px;
+    margin: 0 auto;
   }
 }
 
@@ -81,11 +83,11 @@
     &::after {
       content: "";
       position: absolute;
-      top: 5px;
-      right: 0;
+      top: 0;
+      right: -2px;
       display: block;
-      width: 60px;
-      height: 57px;
+      width: 58px;
+      height: 61px;
       background-repeat: no-repeat;
       background-position: center;
       border: 2px solid #e5e5e5;
@@ -95,6 +97,12 @@
     &--phone {
       &::after {
         background-image: url("../../img/phone-icon.svg");
+      }
+    }
+
+    &--mail {
+      &::after {
+        background-image: url("../../img/mail-icon.svg");
       }
     }
   }
