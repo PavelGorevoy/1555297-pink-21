@@ -42,17 +42,46 @@
   }
 }
 
-.page-header__image img {
+.page-header__image {
   width: 74px;
   height: 23px;
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     width: 145px;
     height: 40px;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: inherit;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 147px;
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: inherit;
+
+      &:hover path,
+      &:focus path {
+        fill: $red-color;
+      }
+    }
   }
 }
 
