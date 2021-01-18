@@ -11,6 +11,10 @@
 }
 
 .social__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   height: 48px;
   border: 3px solid rgba(40, 54, 69, 0.1);
@@ -28,24 +32,7 @@
 }
 
 .social__link {
-  &--twitter {
-    svg {
-      padding-top: 18px;
-      padding-left: 16px;
-    }
-  }
-
-  &--facebook {
-    svg {
-      padding-top: 16px;
-      padding-left: 20px;
-    }
-  }
-
-  &--youtube {
-    svg {
-      padding-top: 18px;
-      padding-left: 18px;
-    }
+  svg {
+    fill: $red-color;
   }
 }

@@ -32,6 +32,22 @@
   padding-bottom: 14px;
   padding-left: 20px;
 
+
+  svg {
+    fill: $basic-white;
+
+    &:hover,
+    &:focus {
+      fill: $red-color;
+    }
+
+    &:active {
+      fill: $basic-white;
+      opacity: 0.3;
+    }
+  }
+
+
   @media (min-width: $tablet-width) {
     padding-top: 27px;
     padding-bottom: 36px;

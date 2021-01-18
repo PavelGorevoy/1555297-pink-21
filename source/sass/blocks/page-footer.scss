@@ -62,6 +62,22 @@
   }
 }
 
+.page-footer__link {
+  svg {
+    fill: $dark-blue;
+
+    &:hover,
+    &:focus {
+      fill: $red-color;
+    }
+
+    &:active {
+      fill: $dark-blue;
+      opacity: 0.3;
+    }
+  }
+}
+
 .page-footer__copyright {
   display: flex;
   text-align: center;
@@ -79,6 +95,21 @@
     b {
       font-size: 18px;
       line-height: 18px;
+    }
+  }
+}
+
+.page-footer__link--academy {
+  svg {
+    fill: $red-color;
+
+    &:hover,
+    &:focus {
+      fill: $dark-blue;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }
