@@ -181,9 +181,29 @@
 .button--post {
   color: $red-color;
   border: 3px solid $red-color;
+
+  &:hover,
+  &:focus {
+    background-color: $red-color;
+    color: $basic-white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--reset {
   opacity: 0.1;
   border: 3px solid $dark-blue;
+
+  &:hover,
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
