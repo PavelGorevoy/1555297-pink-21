@@ -23,7 +23,7 @@
   line-height: 30px;
   width: 280px;
   padding-top: 44px;
-  padding-bottom: 31px;
+  padding-bottom: 35px;
 
   @media (max-width: $mobile-width-only) {
     @include container;
@@ -42,7 +42,7 @@
 
   @media (min-width: $desktop-width) {
     width: 756px;
-    padding-bottom: 70px;
+    padding-bottom: 72px;
   }
 }
 
@@ -60,6 +60,6 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 5px;
   }
 }

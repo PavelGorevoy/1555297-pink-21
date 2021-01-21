@@ -2,8 +2,8 @@
   @include stile-list;
 }
 
-@media (min-width: $desktop-width) {
-  .slider__toggles {
+.slider__toggles {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }

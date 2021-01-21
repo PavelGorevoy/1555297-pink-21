@@ -131,8 +131,9 @@
       flex-wrap: wrap;
       flex-direction: row;
       align-items: baseline;
-      min-height: 111px;
+      min-height: 104px;
       width: 590px;
+      padding-top: 24px;
 
       ::before {
         top: -452px;
@@ -141,7 +142,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      min-height: 79px;
+      min-height: 72px;
       width: 910px;
 
       ::before {
@@ -192,6 +193,7 @@
 
     &--top {
       width: 100%;
+      padding-bottom: 0;
     }
   }
 }
@@ -203,10 +205,17 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
+    padding-bottom: 22px;
   }
 
   &--top {
     padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--top {
+      padding-bottom: 0;
+    }
   }
 }
 

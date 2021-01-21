@@ -3,11 +3,11 @@
 }
 
 .modal__box {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  top: 1425px;
+  top: 50vh;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -17,31 +17,24 @@
   background-color: $basic-white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 5px;
+  z-index: 4;
 
   @media (min-width: $tablet-width) {
-    top: 1164px;
     width: 460px;
     min-height: 363px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 817px;
     width: 780px;
     min-height: 377px;
   }
 }
 
 .modal__send {
-  top: 1899px;
   min-height: 380px;
 
   @media (min-width: $tablet-width) {
-    top: 1638px;
     min-height: 432px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 1275px;
   }
 }
 

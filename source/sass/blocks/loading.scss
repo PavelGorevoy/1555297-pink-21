@@ -51,7 +51,7 @@
   @media (min-width: $desktop-width) {
     background-color: $gray;
     width: 940px;
-    padding-bottom: 0;
+    padding-bottom: 9px;
   }
 }
 
@@ -102,7 +102,21 @@
   width: 280px;
   gap: 12px;
   padding-top: 65px;
-  padding-bottom: 41px;
+  padding-bottom: 48px;
+
+  @media (max-width: $mobile-width-only) {
+    &--fill {
+      position: absolute;
+      top: 20px;
+      left: 99px;
+    }
+
+    &--contrast {
+      position: absolute;
+      top: 25px;
+      left: 180px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 260px;
@@ -117,20 +131,6 @@
     gap: initial;
     width: 410px;
     padding-top: 145px;
-  }
-}
-
-@media (max-width: $mobile-width-only) {
-  .loading__buttons--fill {
-    position: absolute;
-    top: 20px;
-    left: 99px;
-  }
-
-  .loading__buttons--contrast {
-    position: absolute;
-    top: 25px;
-    left: 180px;
   }
 }
 

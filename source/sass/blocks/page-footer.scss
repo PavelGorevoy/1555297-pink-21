@@ -14,23 +14,19 @@
   @include fonts-stile;
   font-size: 14px;
   line-height: 18px;
-  padding: 7px 15px 0 0;
+  padding: 9px 15px 0 0;
 }
 
 .page-footer__wrapper {
   @include container;
   display: grid;
-  gap: 41px;
+  gap: 38px;
   padding-top: 33px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr min-content 1fr;
     gap: normal;
     padding-top: 27px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 75px;
   }
 }
 

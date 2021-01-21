@@ -46,7 +46,8 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: initial;
+    display: block;
+    margin: 0 auto;
     text-align: center;
     color: $red-color;
     text-transform: uppercase;

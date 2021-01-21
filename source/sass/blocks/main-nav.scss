@@ -84,15 +84,20 @@
   }
 }
 
-@media (max-width: $desktop-width - 1px) {
-  .main-nav--closed .page-header__item {
+.main-nav--closed .page-header__item {
+  @media (max-width: $desktop-width) {
     display: none;
 
     &--active {
       display: block;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
+
 
 .main-nav--nojs .main-nav__toggle {
   display: none;

@@ -32,8 +32,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 39px;
-    padding-top: 54px;
+    gap: 46px;
+    padding-top: 49px;
     padding-left: 74px;
   }
 }
@@ -41,8 +41,8 @@
 .form-platforms__input + label::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
+  left: -5px;
+  top: -2px;
   width: 37px;
   height: 37px;
   background: $basic-white;
@@ -53,8 +53,8 @@
 .form-platforms__input:checked + label::after {
   content: "";
   position: absolute;
-  top: 13px;
-  left: 13px;
+  top: 11px;
+  left: 8px;
   width: 15px;
   height: 15px;
   background-color: $red-color;

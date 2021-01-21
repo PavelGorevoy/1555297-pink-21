@@ -6,12 +6,6 @@
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .diagram__container {
-    display: none;
-  }
-}
-
 .diagram__container {
   display: none;
 
@@ -22,25 +16,27 @@
     width: 620px;
     padding-top: 93px;
     background: url("../../img/timer.svg") no-repeat;
-    background-position: 19px 51px;
+    background-position: 0 54px;
     background-size: 238px 276px;
     height: 244px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 142px;
+    padding-top: 121px;
     padding-bottom: 73px;
     background-size: 298px 345px;
-    background-position: 0 46px;
+    background-position: 1px 26px;
     width: 940px;
   }
 }
 
 .diagram__box {
-  padding-left: 330px;
+  padding-left: 309px;
+  padding-top: 3px;
 
   @media (min-width: $desktop-width) {
     padding-left: 372px;
+    padding-top: 3px;
   }
 }
 
@@ -76,13 +72,9 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
-    width: 534px;
-    padding-top: 23px;
+    width: 528px;
+    padding-top: 19px;
     padding-bottom: 30px;
-
-    br {
-      display: none;
-    }
   }
 }
 

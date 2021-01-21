@@ -44,7 +44,7 @@
   justify-content: center;
   width: 100%;
   min-width: 222px;
-  gap: 20px;
+  gap: 19px;
   padding-top: 32px;
 
   @media (min-width: $tablet-width) {
@@ -52,12 +52,14 @@
     flex-wrap: wrap;
     gap: initial;
     padding-top: 33px;
+    width: 638px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 8px;
+    width: 956px;
   }
 }
 
@@ -68,7 +70,7 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     &--position {
-      padding-top: 55px;
+      padding-top: 47px;
     }
   }
 
@@ -162,8 +164,8 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .contact__item--link {
+.contact__item--link {
+  @media (min-width: $desktop-width) {
     &:hover,
     &:focus {
       color: $basic-black;
