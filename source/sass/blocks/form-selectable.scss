@@ -42,4 +42,12 @@
   padding-top: 6px;
   padding-left: 57px;
   cursor: pointer;
+
+  &--platforms {
+    padding-left: 70px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 59px;
+    }
+  }
 }

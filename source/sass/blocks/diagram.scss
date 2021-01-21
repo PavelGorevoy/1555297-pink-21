@@ -34,7 +34,12 @@
   padding-left: 309px;
   padding-top: 3px;
 
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+
   @media (min-width: $desktop-width) {
+    width: 521px;
     padding-left: 372px;
     padding-top: 3px;
   }
@@ -70,11 +75,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: block;
     font-size: 18px;
     line-height: 30px;
-    width: 528px;
     padding-top: 19px;
     padding-bottom: 30px;
+
+    br {
+      display: none;
+    }
   }
 }
 

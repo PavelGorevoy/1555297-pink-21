@@ -27,10 +27,6 @@
 
   @media (max-width: $mobile-width-only) {
     @include container;
-
-    &--fill {
-      display: none;
-    }
   }
 
   @media (min-width: $tablet-width) {
@@ -43,6 +39,12 @@
   @media (min-width: $desktop-width) {
     width: 756px;
     padding-bottom: 72px;
+  }
+}
+
+.form__text-fill {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
 

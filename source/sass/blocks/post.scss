@@ -22,7 +22,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 700px;
-    margin-bottom: 43px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,7 +75,7 @@
   background-color: $gray;
   min-height: 126px;
   padding-top: 17px;
-  padding-left: 21px;
+  padding-left: 17px;
   text-align: left;
 
   @media (max-width: $mobile-width-only) {
@@ -131,7 +131,7 @@
       flex-wrap: wrap;
       flex-direction: row;
       align-items: baseline;
-      min-height: 104px;
+      min-height: 97px;
       width: 590px;
       padding-top: 24px;
 
@@ -178,12 +178,13 @@
 
   &--top {
     width: 100%;
+    padding-bottom: 11px;
   }
 
   @media (min-width: $tablet-width) {
     &--top {
       order: 2;
-      width: 100%;
+      width: 90%;
       padding-bottom: 9px;
     }
   }
@@ -201,7 +202,7 @@
 .post__button {
   display: flex;
   align-items: baseline;
-  padding-bottom: 12px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -209,7 +210,8 @@
   }
 
   &--top {
-    padding-bottom: 20px;
+    padding-bottom: 0;
+    width: 148px;
   }
 
   @media (min-width: $desktop-width) {
@@ -231,5 +233,6 @@
   @media (min-width: $tablet-width) {
     order: -1;
     padding-left: 0;
+    margin: 0;
   }
 }

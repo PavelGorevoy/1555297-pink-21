@@ -26,7 +26,7 @@
   @media (max-width: $mobile-width-only) {
     @include container;
     display: grid;
-    grid-gap: 18px;
+    grid-gap: 23px;
   }
 
   @media (min-width: $tablet-width) {

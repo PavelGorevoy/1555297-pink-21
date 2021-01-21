@@ -6,8 +6,7 @@
   @include stile-list;
   display: grid;
   grid-template-columns: repeat(3, min-content);
-  gap: 14px;
-  vertical-align: middle;
+  gap: 8px;
 }
 
 .social__item {
